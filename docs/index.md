@@ -20,7 +20,7 @@ Esta es una **plantilla** basada en [MkDocs](https://www.mkdocs.org/) + [Materia
 
 ## 1.- Abraham Domínguez Noda
 
-<img src="recursos/imgs/Abrahamfoto.jpg" alt="Diagrama del sistema" width="300">  
+<img src="recursos/imgs/Abrahamfoto.jpg.jfif" alt="Diagrama del sistema" width="300">  
 
 ### Descripción personal
 
