@@ -7,3 +7,5 @@ Descripción: Esta practica consisitio en llevar a cabo un circuito electrico ut
 
 <img src="recursos/imgs/practica1img.jfif" alt="Diagrama del sistema" width="300">  <img src="recursos/imgs/practica1video.mp4" alt="Diagrama del sistema" width="300">  
 
+(https://raw.githubusercontent.com/JoseGilGonzalezBerra/Pagina_de_JoseGIL/recursos/imgs/practica1video.mp4)
+
