@@ -7,7 +7,6 @@
 
 <img src="recursos/imgs/practica1img.jfif" alt="Diagrama del sistema" width="300">
 
-<img src="recursos/imgs/Abrahamfoto.jpg.jfif" alt="Diagrama del sistema" width="300">  
 
 https://github.com/user-attachments/assets/a8c976ce-25f4-4ebd-9633-054513f04ddb
 
