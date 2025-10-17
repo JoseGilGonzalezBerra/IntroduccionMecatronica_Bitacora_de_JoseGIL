@@ -25,6 +25,10 @@ https://github.com/user-attachments/assets/a8c976ce-25f4-4ebd-9633-054513f04ddb
 - Descripción:
 
 
+## 1.- Abraham Domínguez Noda
+
+<img src="recursos/imgs/Abrahamfoto.jpg.jfif" alt="Diagrama del sistema" width="300">  
+
 
 
 ## **Practica 4- Movimiento de servo-motores con ESP32**
