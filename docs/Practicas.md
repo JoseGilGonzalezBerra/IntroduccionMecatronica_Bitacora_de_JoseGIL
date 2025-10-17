@@ -6,7 +6,7 @@
 - Descripción: Esta practica consisitio en llevar a cabo un circuito electrico utilizando un capacitor y un circuito integrado (chip 555) teniendo como objetivo encender y apagar una luz LED en un lapso de tiempo entre 1 a 5 segundos.
 
 -<img src="recursos/imgs/practica1img.jpeg.jfif" alt="Diagrama del sistema" width="300">
--[Video del uso de la maquina](recursos/archivos/videomaquina.mp4)
+-[Video del uso de la maquina](recursos/imgs/practica1video.mp4)
 
 
 -<img src="recursos/imgs/practica1video.mp4" alt="Diagrama del sistema" width="300">
