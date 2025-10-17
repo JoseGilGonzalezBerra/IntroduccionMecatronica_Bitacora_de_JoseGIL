@@ -7,7 +7,6 @@
 
 -<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
--<img src="recursos/imgs/practica1video.mp4" alt="Diagrama del sistema" width="300">
 
 -[Video de Encendio del Led](recursos/archivos/practica1video.mp4)
 
