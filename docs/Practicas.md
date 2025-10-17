@@ -29,7 +29,7 @@
 -<img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
 -<img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
 
--[Video de Encendio del Led](recursos/archivos/practicamotores.mp4)
+-[Video de Encendidi de Motores con ESP32](recursos/archivos/practicamotores.mp4)
 
 
 
