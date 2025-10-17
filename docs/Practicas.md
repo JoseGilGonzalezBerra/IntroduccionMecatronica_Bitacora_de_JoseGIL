@@ -9,8 +9,6 @@
 -[Video del uso de la maquina](recursos/imgs/practica1video.mp4)
 
 
--<img src="recursos/imgs/practica1video.mp4" alt="Diagrama del sistema" width="300">
-
 
 
 ## **Practica 2- Encendido de LED con ESP32**
