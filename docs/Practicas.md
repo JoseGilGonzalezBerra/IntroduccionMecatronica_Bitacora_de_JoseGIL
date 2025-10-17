@@ -1,7 +1,7 @@
 # **Practicas de clase**
 ---
 ## **Practica 1 - Encendido de LED**
-### - **Fecha:** 05/09/2025
+
 
 - Descripción: Esta practica consisitio en llevar a cabo un circuito electrico utilizando un capacitor y un circuito integrado (chip 555) teniendo como objetivo encender y apagar una luz LED en un lapso de tiempo entre 1 a 5 segundos.
 
@@ -15,7 +15,6 @@
 
 
 ## **Practica 2- Encendido de LED con ESP32**
-### - **Fecha:** 0/0/2025
 
 - Descripción: 
 
@@ -23,10 +22,13 @@
 
 
 ## **Practica 3- Movimiento de motores con ESP32**
-### - **Fecha:** 0/0/2025
 
 - Descripción:
 
+-<img src="recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
+-<img src="recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
+-<img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
+-<img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
 
 ## 1.- Abraham Domínguez Noda
 
