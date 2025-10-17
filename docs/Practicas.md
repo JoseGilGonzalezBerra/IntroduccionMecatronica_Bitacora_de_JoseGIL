@@ -7,7 +7,7 @@
 
 <img src="recursos/imgs/practica1img.jpeg.jfif" alt="Diagrama del sistema" width="300">
 
-<img src="recursos/imgs/practica1img.jpeg.jfif" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/practica1video.mp4" alt="Diagrama del sistema" width="300">
 
 
 
