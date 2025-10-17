@@ -23,21 +23,20 @@
 
 ## **Practica 3- Movimiento de motores con ESP32**
 
-- Descripción:
+- Descripción: Esta practica consistio en el funcionamiento de motores, como usarlos con las ESP32 y el codigo para hacerlos funcionar,  en esta practica teniamos que hacer que el motor acelerara poco a poco hasta la velocidad maxima y que luego desacelerara poco a poco hasta que se parara.
 
 -<img src="recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
 -<img src="recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
 -<img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
 -<img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
 
-## 1.- Abraham Domínguez Noda
 
-<img src="recursos/imgs/Abrahamfoto.jpg.jfif" alt="Diagrama del sistema" width="300">  
 
 
 
 ## **Practica 4- Movimiento de servo-motores con ESP32**
-### - **Fecha:** 0/0/2025
+
+### - 
 
 - Descripción: 
 
