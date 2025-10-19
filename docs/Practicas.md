@@ -10,7 +10,7 @@ La práctica se enmarcó dentro de la materia de Introducción a la Mecatrónica
 
 Los objetivos principales de esta práctica fueron:
 
-1.-Comprender el principio de funcionamiento del circuito integrado 555 en su configuración astable.
+1.-Comprender el principio de funcionamiento del circuito integrado 555 en su configuración astable.\n
 
 2.-Diseñar e implementar un circuito intermitente capaz de controlar el encendido y apagado de un LED.
 
