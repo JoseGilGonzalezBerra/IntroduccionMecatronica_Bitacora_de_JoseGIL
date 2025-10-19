@@ -67,20 +67,20 @@ Formulas:
 
 ### Resultados
 
-Tiempo de Apagado: 2.43 segundos
+- Tiempo de Apagado: 2.43 segundos
 
-Tiempo de Encendido: 2.49 segundos
+- Tiempo de Encendido: 2.49 segundos
 
-Período Total: 4.92 segundos
+- Período Total: 4.92 segundos
 
 
 ### Conclusion
 
 La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 kOmega y $C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
 
--<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
--[Video de Encendio del Led](recursos/archivos/practica1video.mp4)
+[Video de Encendio del Led](recursos/archivos/practica1video.mp4)
 
 
 
@@ -172,6 +172,7 @@ La actividad fue completamente exitosa y demostró el control digital del microc
 
 Concluyó con éxito, demostrando el control esencial de las salidas digitales del ESP32. Se logró programar un parpadeo intermitente con un periodo de 2 segundos (1 s encendido, 1 s apagado). El principal aprendizaje fue la correcta aplicación de pinMode() para la configuración y digitalWrite() para la conmutación de estados
 
+[Video de Encendio del Led](recursos/archivos/videoLED1.mp4)
 
 
 ## **Practica 3- Encendido de LED con ESP32 y un botón**
@@ -259,6 +260,9 @@ La actividad fue exitosa, estableciendo un control directo y en tiempo real sobr
 ### Conclusion
 
 La práctica fue exitosa al implementar el control de un LED mediante una entrada digital, consolidando el uso del ESP32 para la interacción en tiempo real. Se demostró la capacidad de leer el estado de un interruptor `(digitalRead)` y usar esa información para controlar una salida `(digitalWrite)`
+
+[Video de Encendio del Led](recursos/archivos/videoledboton.mp4)
+
 
 
 
@@ -350,7 +354,7 @@ El dispositivo "AbrahamESP32" fue detectado y se pudo establecer el emparejamien
 
 Concluyó exitosamente con la implementación del control remoto de un LED mediante Bluetooth Serial en el ESP32. Se logró configurar el enlace inalámbrico y demostrar la capacidad del microcontrolador para procesar comandos de texto recibidos por aire para manipular una salida digital.
 
-
+[Video de Encendio del Led](recursos/archivos/videoLEDbluetooth.mp4)
 
 
 
