@@ -151,7 +151,17 @@ Los objetivos principales de esta actividad fueron:
 
 ### Marco Teorico
 
+**Microcontrolador ESP32**
 
+El ESP32 es el sistema de control que aloja el código. El núcleo de la práctica es el manejo de los pines GPIO (Entrada/Salida de Propósito General), que pueden ser configurados de dos formas:
+
+- Salida (OUTPUT): Envía una señal (voltaje) para controlar el LED.
+- Entrada (INPUT): Lee el voltaje aplicado externamente por el botón.
+
+
+**Botón Pulsador y Resistencia Pull-down**
+
+El Botón Pulsador actúa como un interruptor. Al ser presionado, conecta el pin de entrada (GPIO 34) a la fuente de voltaje ($3.3 \text{V}$), lo que genera la señal ALTO (1) que el ESP32 debe leer. Idealmente, se usa una resistencia pull-down para asegurar que el pin siempre lea BAJO (0) cuando el botón está liberado, evitando lecturas erróneas.
 
 ### Procedimiento
 
@@ -160,7 +170,7 @@ Los objetivos principales de esta actividad fueron:
  - Microcontrolador ESP32
  - LED
  - Resistencia limitadora (para el LED)
- - Resistencia
+ - Resistencia Pull Down 
  - Botón Pulsador de cuatro patas.
  - Cables Jumper
  - Protoboard.
@@ -170,19 +180,19 @@ Los objetivos principales de esta actividad fueron:
 
 1.- Conexión del LED: 
 
--El LED se conecta al GPIO 33, con su resistencia limitadora a GND.
+-El LED se conecta al pin 33, con su resistencia limitadora a GND.
 
 2.- Conexión del Botón:
 
-- Un terminal del botón se conecta a GPIO 32.
+- Un terminal del botón se conecta al pin 34.
 - Otro terminal del botón se conecta a la fuente de voltaje (3.3V).
-- Se conecta una resistencia del pin GPIO 32 a Tierra (GND).
+- Se conecta una resistencia del pin  34 a Tierra (GND).
 
 3.- Generamos el codigo y se lo subimos a la ESP32:
 
 ```
 const int led = 33;
-const int btn = 32;
+const int btn = 34;
 
 void setup() {
   Serial.begin(115200);
@@ -214,7 +224,91 @@ La práctica fue exitosa al implementar el control de un LED mediante una entrad
 
 ## **Practica 4 - Encendido de Led con ESP32 y Bluetooth**
 
+### Introduccion
 
+Esta práctica marca la transición del control local (botones, temporización) al control remoto inalámbrico, utilizando la capacidad nativa de Bluetooth del microcontrolador ESP32. El objetivo fue establecer una comunicación serial a través de Bluetooth para enviar comandos simples de texto  desde un dispositivo externo (como un smartphone) y gestionar remotamente el estado de un LED.
+
+
+### Marco Teorico
+
+**Bluetooth Serial (SPP)**
+
+El ESP32 soporta múltiples protocolos, incluyendo Bluetooth Clásico para la comunicación Serial Profile (SPP). Esto permite que el ESP32 se comunique como un dispositivo de puerto serie virtual, siendo detectado y emparejado como un módulo Bluetooth tradicional (como el HC-05). La librería BluetoothSerial.h facilita esta funcionalidad, permitiendo enviar y recibir datos como si fuera una conexión serial por cable.
+
+**Comunicación Inalámbrica**
+
+El control se basa en la recepción de datos sin contacto físico.
+
+- `SerialBT.begin()`: Asigna un nombre (en el código, "Sam_ESP32") para que el dispositivo sea visible y se pueda emparejar.
+
+- `SerialBT.available()`: Es la función clave que verifica continuamente si hay comandos (datos) pendientes en el buffer de recepción inalámbrico.
+
+- `SerialBT.readString()`: Lee la cadena de texto completa enviada por el dispositivo remoto (el comando).
+
+
+### Procedimiento
+
+**Materiales**
+
+- Microcontrolador ESP32
+- LED
+- Resistencia limitadora.
+- Cables Jumper
+- Protoboard.
+- Dispositivo Remoto: Un smartphone o computadora con capacidad Bluetooth y una aplicación de terminal Serial Bluetooth para enviar los comandos
+
+**Procedimiento de conexion de cables y programación**
+
+1.- Los cables se mantienen conectados de la misma manera que en la practica anterior, solo cambiamos el codigo
+
+2.- Generamos el codigo y lo subimos a la ESP32:
+
+```
+#include "BluetoothSerial.h"
+BluetoothSerial SerialBT;
+
+const int led = 33;
+
+void setup() {
+  Serial.begin(115200);
+  SerialBT.begin("AbrahamESP32"); // Nombre del dispositivo Bluetooth
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  if (SerialBT.available()) {
+    String mensaje = SerialBT.readString();
+    Serial.println("Recibido: " + mensaje);
+
+    if (mensaje == "ON") {
+      digitalWrite(led, HIGH);
+    } else if (mensaje == "OFF") {
+      digitalWrite(led, LOW);
+    }
+  }
+  delay(100);
+}
+
+```
+3.- Con la aplicacion concetamos el celular via Bluetooth a la ESP32 y comprobamos que al escirbir "ON" se enciende y al escribir "OFF" se apaga el LED.
+
+
+### Resultados 
+
+**Conectividad:** 
+
+El dispositivo "AbrahamESP32" fue detectado y se pudo establecer el emparejamiento desde el dispositivo remoto.
+
+**Comportamiento del LED:**
+
+- Al enviar el mensaje exacto "ON" desde la terminal Bluetooth, el LED se encendió.
+- Al enviar el mensaje exacto "OFF", el LED se apagó.
+- Cualquier otro comando o variación de texto no generó ninguna acción, confirmando la sensibilidad del código a la coincidencia exacta de la cadena de texto.
+
+
+### Conclusion
+
+Concluyó exitosamente con la implementación del control remoto de un LED mediante Bluetooth Serial en el ESP32. Se logró configurar el enlace inalámbrico y demostrar la capacidad del microcontrolador para procesar comandos de texto recibidos por aire para manipular una salida digital.
 
 
 
