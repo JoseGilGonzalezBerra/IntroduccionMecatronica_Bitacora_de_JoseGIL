@@ -162,7 +162,7 @@ void loop() {
 La actividad fue completamente exitosa y demostró el control digital del microcontrolador.
 
 - Comportamiento Observado: El LED comenzó a parpadear de forma rítmica e ininterrumpida tan pronto como se cargó el código.
-- Temporización: El tiempo de encendido fue de $\mathbf{1}$ segundo y el tiempo de apagado fue de $\mathbf{1}$ segundo, cumpliendo con la temporización programada en el código.
+- Temporización: El tiempo de encendido fue de $\mathbf{1}$ segundo y el tiempo de apagado fue de 1 segundo, cumpliendo con la temporización programada en el código.
 
 
 ### Conclusion
@@ -181,8 +181,8 @@ El objetivo fue establecer la comunicación bidireccional entre el ESP32 y el mu
 
 Los objetivos principales de esta actividad fueron:
 
- - Configurar un pin GPIO del ESP32 como entrada para leer el estado del botón.
- - Configurar otro pin GPIO como salida para controlar el LED.
+ - Configurar un pin del ESP32 como entrada para leer el estado del botón.
+ - Configurar otro pin como salida para controlar el LED.
  - Implementar la lógica de control para que el LED se encienda únicamente cuando se detecte la pulsación del botón (estado ALTO).
 
 
@@ -276,7 +276,7 @@ El ESP32 soporta múltiples protocolos, incluyendo Bluetooth Clásico para la co
 
 El control se basa en la recepción de datos sin contacto físico.
 
-- `SerialBT.begin()`: Asigna un nombre (en el código, "Sam_ESP32") para que el dispositivo sea visible y se pueda emparejar.
+- `SerialBT.begin()`: Asigna un nombre (en el código, "Abraham_ESP32") para que el dispositivo sea visible y se pueda emparejar.
 
 - `SerialBT.available()`: Es la función clave que verifica continuamente si hay comandos (datos) pendientes en el buffer de recepción inalámbrico.
 
@@ -446,12 +446,12 @@ El circuito implementado con el ESP32 ejecutó la secuencia programada, logrando
 La práctica fue exitosa al demostrar el control básico de dirección y temporización de un motor DC utilizando el ESP32 y un driver Puente H. Se logró controlar la dirección de giro y la duración de cada estado (avance, paro y reversa) mediante los comandos digitalWrite() y delay(). Esto confirmó la comprensión de la lógica del driver y la capacidad del ESP32 para manejar la actuación.
 
 
--<img src="recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
--<img src="recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
--<img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
--<img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
+<img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
 
--[Video de Encendidi de Motores con ESP32](recursos/archivos/practicamotores.mp4)
+[Video de Encendidi de Motores con ESP32](recursos/archivos/practicamotores.mp4)
 
 
 
