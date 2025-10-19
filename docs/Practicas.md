@@ -64,11 +64,11 @@ Formulas:
 
 ### Resultados
 
-Tiempo de Apagado ($T_{OFF}$) $\mathbf{2.43 \text{ segundos}}$
+Tiempo de Apagado ($T_{OFF}$): 2.43 segundos
 
-Tiempo de Encendido ($T_{ON}$)$0.693 \times (R_1 + R_2) \times C_1$$\mathbf{2.49 \text{ segundos}}
+Tiempo de Encendido ($T_{ON}$): 2.49 segundos
 
-Período Total ($T$)$0.693 \times (R_1 + 2R_2) \times C_1$$\mathbf{4.92 \text{ segundos}}$
+Período Total ($T$): 4.92 segundos
 
 
 ### Conclusion
@@ -76,9 +76,8 @@ Período Total ($T$)$0.693 \times (R_1 + 2R_2) \times C_1$$\mathbf{4.92 \text{ s
 La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 \text{ k}\Omega$ y $C_1 = 100 \mu F$ produjo un parpadeo lento con un período cercano a $\mathbf{2 \text{ segundos}}$ entre encendido y apagado.
 
 -<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
-
-
 -[Video de Encendio del Led](recursos/archivos/practica1video.mp4)
+
 
 
 ## **Practica 2 - Encendido y apagado de LED con ESP32**
