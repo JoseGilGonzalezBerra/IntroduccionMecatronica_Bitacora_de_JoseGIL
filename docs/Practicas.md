@@ -64,9 +64,9 @@ La Práctica 3, "Movimiento de motores con ESP32", tuvo como objetivo principal 
 - Objetivos:
 
 - Los objetivos principales de esta práctica fueron:
-   1.- Establecer la comunicación y el control de un motor de corriente continua (DC) mediante el microcontrolador ESP32 y un driver de motor.
-   2.- Implementar el control de dirección del motor, logrando que gire en un sentido, se detenga y luego gire en el sentido opuesto.
-   3.- Programar y controlar la temporización de cada estado de movimiento (avance, paro y reversa) utilizando funciones de retardo (delay).
+ * Establecer la comunicación y el control de un motor de corriente continua (DC) mediante el microcontrolador ESP32 y un driver de motor.
+ *  Implementar el control de dirección del motor, logrando que gire en un sentido, se detenga y luego gire en el sentido opuesto.
+ *   Programar y controlar la temporización de cada estado de movimiento (avance, paro y reversa) utilizando funciones de retardo (delay).
 
 ### Marco Teorico
 
