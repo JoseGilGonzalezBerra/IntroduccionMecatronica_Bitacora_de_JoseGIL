@@ -15,6 +15,10 @@ Comprender el principio de funcionamiento del circuito integrado 555 en su confi
 
 ### Marco Teorico
 
+**Circuito Integrado 555 (Modo Astable):**
+
+El 555 en modo astable opera como un multivibrador auto-oscilante, lo que significa que su salida (Pin 3) conmuta continuamente entre el estado ALTO y BAJO sin necesidad de una entrada externa. El tiempo que permanece en cada estado lo define la carga y descarga del capacitor a través de las resistencias.
+
 
 
 
@@ -23,8 +27,8 @@ Comprender el principio de funcionamiento del circuito integrado 555 en su confi
 - Materiales y Equipo
   * Circuito Integrado 555
   * LED 
-  * Resistencias
-  * Capacitor
+  * Resistencias de 1 y de 35
+  * Capacitor de 100 Uf
   * Fuente de alimentación (VCC).
   * Protoboard y cables de conexión.
   * Osciloscopio y/o cronómetro (para verificación).
