@@ -6,11 +6,9 @@
 
 La práctica se enmarcó dentro de la materia de Introducción a la Mecatrónica y tuvo como finalidad el estudio y la aplicación del circuito integrado temporizador 555. El manejo de temporizadores y la generación de señales de reloj son fundamentales para el diseño de sistemas de control y automatización.
 
-- Objetivos
+- Los objetivos principales de esta práctica fueron:
 
-Los objetivos principales de esta práctica fueron:
-
- * Comprender el principio de funcionamiento del circuito integrado 555 en su configuración astable.
+Comprender el principio de funcionamiento del circuito integrado 555 en su configuración astable.
  * Diseñar e implementar un circuito intermitente capaz de controlar el encendido y apagado de un LED.
  * Calcular y ajustar los componentes pasivos ($R_1$, $R_2$ y $C_1$) para lograr un periodo de oscilación total (T) entre 1 y 5 segundos.
 
@@ -25,9 +23,9 @@ Los objetivos principales de esta práctica fueron:
 - Materiales y Equipo
   * Circuito Integrado 555
   * LED 
-  * Resistencias: $R_1 = 1 k\Omega$, $R_2 = 10 k\Omega$, $R_4 = 1 k\Omega$ (limitadora del LED).
-  * Capacitor: $C_1 = 10 \mu F$, $C_2 = 0.01 \mu F$
-  * Fuente de alimentación de $9V$ (VCC).
+  * Resistencias
+  * Capacitor
+  * Fuente de alimentación (VCC).
   * Protoboard y cables de conexión.
   * Osciloscopio y/o cronómetro (para verificación).
 
@@ -59,24 +57,24 @@ Los objetivos principales de esta práctica fueron:
 
 ### Introduccion
 
-La Práctica 3, "Movimiento de motores con ESP32", tuvo como objetivo principal la integración de un sistema embebido (ESP32) con un sistema de actuación (motor DC) utilizando un módulo controlador Puente H. Esta práctica es fundamental en el campo de la Mecatrónica, ya que establece las bases para el control de movimiento y la dirección de actuadores en sistemas automatizados y robótica.
+La práctica tuvo como objetivo principal la integración de un sistema embebido (ESP32) con un sistema de actuación (motor DC) utilizando un módulo controlador Puente H. Esta práctica es fundamental en el campo de la Mecatrónica, ya que establece las bases para el control de movimiento y la dirección de actuadores en sistemas automatizados y robótica.
 
 - Objetivos:
 
 - Los objetivos principales de esta práctica fueron:
- * Establecer la comunicación y el control de un motor de corriente continua (DC) mediante el microcontrolador ESP32 y un driver de motor.
- *  Implementar el control de dirección del motor, logrando que gire en un sentido, se detenga y luego gire en el sentido opuesto.
- *   Programar y controlar la temporización de cada estado de movimiento (avance, paro y reversa) utilizando funciones de retardo (delay).
+ - Establecer la comunicación y el control de un motor de corriente continua (DC) mediante el microcontrolador ESP32 y un driver de motor.
+ - Implementar el control de dirección del motor, logrando que gire en un sentido, se detenga y luego gire en el sentido opuesto.
+ - Programar y controlar la temporización de cada estado de movimiento (avance, paro y reversa) utilizando funciones de retardo (delay).
 
 ### Marco Teorico
 
-- Motores DC (Actuador)
+- Motores DC (Actuador):-
 El Motor de Corriente Continua (DC) es el componente que convierte la energía eléctrica en movimiento mecánico. Su característica esencial en esta práctica es que su dirección de giro está determinada por la polaridad del voltaje que se le aplica a sus terminales.
 
-- Driver de Motor (Puente H)
+- Driver de Motor (Puente H):-
 El circuito Puente H es un módulo de potencia indispensable que actúa como intermediario. Su función principal es doble: primero, suministrar la alta corriente necesaria para el motor utilizando una fuente externa (ya que el ESP32 no puede hacerlo); y segundo, controlar la dirección del motor. El Puente H invierte la polaridad del voltaje aplicado al motor según las señales lógicas que recibe.
 
-- Interconexión y Control Lógico
+- Interconexión y Control Lógico:-
 La interconexión se establece utilizando los pines del ESP32 para enviar señales de control al Puente H. Específicamente, dos pines del ESP32 (in1 e in2) se conectan a las entradas lógicas del Puente H.
 
 
@@ -84,27 +82,27 @@ La interconexión se establece utilizando los pines del ESP32 para enviar señal
 
 - **Materiales y Equipo**
 
-1.- Microcontrolador ESP32 
-2.- Motor de Corriente Continua 
-3.- Módulo Puente H
-4.- Protoboard
-5.- Cables Jumper
-6.- Fuente de Alimentación Externa (para el motor)
-7.- Computadora con IDE de Arduino
-8.- Cable USB (para el ESP32)
+ - Microcontrolador ESP32
+ - Motor de Corriente Continua
+ - Módulo Puente H
+ - Protoboard
+ - Cables Jumper
+ - Fuente de Alimentación Externa (para el motor)
+ - Computadora con IDE de Arduino
+ - Cable USB (para el ESP32)
 
 - **Procedimiento**
   
 - Montaje y Conexión del Hardware
      
 1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
- * Conectar el pin de entrada 1 del driver al pin 25 (in1).
- * Conectar el pin de entrada 2 del driver al pin 26 (in2).
+ - Conectar el pin de entrada 1 del driver al pin 25 (in1).
+ - Conectar el pin de entrada 2 del driver al pin 26 (in2).
 
 2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.
 
 3.- Alimentación: Conectar la fuente de alimentación externa al pin de voltaje del Driver de Motor.
- * Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
+ - Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
 
 4.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.
 
@@ -168,59 +166,59 @@ La Práctica de Control de Velocidad con ESP32 tuvo como enfoque principal la ap
 - Objetivos:
 
 - Los objetivos principales de esta práctica fueron:
-   1.- Configurar y utilizar el hardware de PWM del microcontrolador ESP32 para generar una señal de velocidad.
-   2.- Implementar un algoritmo que permita al motor acelerar progresivamente hasta su velocidad máxima.
-   3.- Implementar un algoritmo que, al alcanzar la velocidad máxima o un umbral predefinido, inicie una desaceleración o un cambio en la rampa de velocidad.
+   - Configurar y utilizar el hardware de PWM del microcontrolador ESP32 para generar una señal de velocidad.
+   - Implementar un algoritmo que permita al motor acelerar progresivamente hasta su velocidad máxima.
+   - Implementar un algoritmo que, al alcanzar la velocidad máxima o un umbral predefinido, inicie una desaceleración o un cambio en la rampa de velocidad.
 
 ### Marco Teorico
 
 - Motores DC (Actuador):
 
-El Motor DC es el actuador cuya velocidad se controla. Su velocidad de rotación es directamente proporcional al voltaje promedio que recibe. La dirección de giro se mantiene fija en esta práctica mediante una polaridad constante.
+ - El Motor DC es el actuador cuya velocidad se controla. Su velocidad de rotación es directamente proporcional al voltaje promedio que recibe. La dirección de giro se mantiene fija en esta práctica mediante una polaridad constante.
 
 - Driver de Motor (Puente H)
 
 El Driver de Motor (Puente H) es esencial para suministrar la alta corriente que el ESP32 no puede proveer. En esta práctica, el Puente H cumple dos funciones:
 
- * Control de Dirección: Los pines in1 y in2 se fijan en un estado lógico (1 y 0) para mantener una dirección constante.
- * Control de Velocidad: El pin PWM del ESP32 se conecta al pin de Enable del driver para modular el voltaje promedio que llega al motor.
+ - Control de Dirección: Los pines in1 y in2 se fijan en un estado lógico (1 y 0) para mantener una dirección constante.
+ - Control de Velocidad: El pin PWM del ESP32 se conecta al pin de Enable del driver para modular el voltaje promedio que llega al motor.
 
 - Modulación por Ancho de Pulso (PWM):
 
 El PWM es la técnica central para el control de velocidad. El ESP32 utiliza la API ledc para generar una señal digital cuyo ciclo de trabajo (el tiempo que la señal está en ALTO) varía.
 
- * ledcAttachChannel(pin, freq, bits, channel): Inicializa un canal PWM. En el código, la resolución de 8 bits define que la velocidad varía de $0$ (apagado) a $255$ (máximo).
- * 
- * ledcWrite(): Es la función que establece el ciclo de trabajo, controlando directamente la velocidad del motor.
+ - ledcAttachChannel(pin, freq, bits, channel): Inicializa un canal PWM. En el código, la resolución de 8 bits define que la velocidad varía de $0$ (apagado) a $255$ (máximo).
+  
+ - ledcWrite(): Es la función que establece el ciclo de trabajo, controlando directamente la velocidad del motor.
 
 
 ### Procedimiento
 
 - **Materiales y Equipo**
 
-1.- Microcontrolador ESP32 
-2.- Motor de Corriente Continua 
-3.- Módulo Puente H
-4.- Protoboard
-5.- Cables Jumper
-6.- Fuente de Alimentación Externa (para el motor)
-7.- Computadora con IDE de Arduino
-8.- Cable USB (para el ESP32)
+ - Microcontrolador ESP32 
+ - Motor de Corriente Continua 
+ - Módulo Puente H
+ - Protoboard
+ - Cables Jumper
+ - Fuente de Alimentación Externa (para el motor)
+ - Computadora con IDE de Arduino
+ - Cable USB (para el ESP32)
 
 - **Procedimiento**
   
 1. Montaje y Conexión del Hardware
      
 1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
- * Conectar el pin de entrada 1 del driver a pin 32 (in1).
- * Conectar el pin de entrada 2 del driver a pin 33 (in2).
+ - Conectar el pin de entrada 1 del driver a pin 32 (in1).
+ - Conectar el pin de entrada 2 del driver a pin 33 (in2).
 
 2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.
 
 3.- Conexión PWM: El pin 25 (definido implícitamente por el canal 0 en ledcAttachChannel) o un pin equivalente (esto debe revisarse, ya que ledcWrite usa el número de canal o el pin) se conecta al pin de Enable/Velocidad del driver.
 
 4.- Alimentación: Conectar la fuente de alimentación externa al pin de voltaje del Driver de Motor.
- * Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
+ - Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
 
 5.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.
 
