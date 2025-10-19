@@ -64,7 +64,7 @@ Formulas:
 
 ### Resultados
 
-Tiempo de Apagado ($T_{OFF}$)$0.693 \times R_2 \times C_1$$\mathbf{2.43 \text{ segundos}}
+Tiempo de Apagado ($T_{OFF}$) $\mathbf{2.43 \text{ segundos}}$
 
 Tiempo de Encendido ($T_{ON}$)$0.693 \times (R_1 + R_2) \times C_1$$\mathbf{2.49 \text{ segundos}}
 
