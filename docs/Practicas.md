@@ -2,7 +2,7 @@
 ---
 ## **Practica 1 - Encendido de LED**
 
-### Introduccion y Objetivos
+### Introduccion
 
 La práctica se enmarcó dentro de la materia de Introducción a la Mecatrónica y tuvo como finalidad el estudio y la aplicación del circuito integrado temporizador 555. El manejo de temporizadores y la generación de señales de reloj son fundamentales para el diseño de sistemas de control y automatización.
 
