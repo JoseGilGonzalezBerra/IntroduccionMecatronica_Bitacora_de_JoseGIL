@@ -45,6 +45,20 @@ Formulas:
   * Protoboard y cables de conexión.
   * Osciloscopio y/o cronómetro (para verificación).
 
+**Procedimiento de Montaje**
+
+1.- Cálculo: Se verificó el valor teórico del período con los componentes seleccionados, obteniendo $T \approx \mathbf{4.92 \text{ segundos}}$.
+
+2.-Cableado del CI: El CI 555 se colocó en la protoboard. Los Pines 8 (VCC) y 4 (Reset) se conectaron a VCC y los Pines 1 (GND) y 5 (Control) se conectaron a tierra (el Pin 5 con el filtro $C_2$).
+
+3.- Red RC (Temporización):
+- $R_1$ ($\mathbf{1 \text{ k}\Omega}$) se conectó entre VCC y el Pin 7 (Discharge).
+- $R_2$ ($\mathbf{35 \text{ k}\Omega}$) se conectó entre el Pin 7 y los Pines 6 y 2 (unidos).
+- $C_1$ ($\mathbf{100 \mu F}$) se conectó desde los Pines 6/2 a tierra.
+
+4.- Salida: El Pin 3 (Output) se conectó a la resistencia limitadora $R_4$ ($\mathbf{1 \text{ k}\Omega}$), y esta al ánodo del LED, cuyo cátodo fue a tierra.
+
+5.-Verificación: Se aplicó la fuente de alimentación para observar el parpadeo del LED y se utilizó el osciloscopio para medir el período de la señal.
 
 
 
@@ -59,7 +73,7 @@ Período Total ($T$)$0.693 \times (R_1 + 2R_2) \times C_1$$\mathbf{4.92 \text{ s
 
 ### Conclusion
 
-- Descripción: Esta practica consisitio en llevar a cabo un circuito electrico utilizando un capacitor y un circuito integrado (chip 555) teniendo como objetivo encender y apagar una luz LED en un lapso de tiempo entre 1 a 5 segundos.
+La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 \text{ k}\Omega$ y $C_1 = 100 \mu F$ produjo un parpadeo lento con un período cercano a $\mathbf{2 \text{ segundos}}$ entre encendido y apagado.
 
 -<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
