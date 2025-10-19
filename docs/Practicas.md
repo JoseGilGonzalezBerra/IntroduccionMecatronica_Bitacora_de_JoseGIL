@@ -19,7 +19,19 @@ Comprender el principio de funcionamiento del circuito integrado 555 en su confi
 
 El 555 en modo astable opera como un multivibrador auto-oscilante, lo que significa que su salida (Pin 3) conmuta continuamente entre el estado ALTO y BAJO sin necesidad de una entrada externa. El tiempo que permanece en cada estado lo define la carga y descarga del capacitor a través de las resistencias.
 
+**Fórmulas de Cálculo y Componentes:**
 
+El diseño se basa en las siguientes ecuaciones, donde los valores utilizados son: 
+
+- $R1 = 1 \text{ k}\Omega$, 
+- $R_2 = 35 \text{ k}\Omega$
+- $C_1 = 100 \mu F$:
+
+Formulas:
+
+- $T_{OFF}$ (Tiempo de Apagado): $0.693 \times R_2 \times C_1$
+- $T_{ON}$ (Tiempo de Encendido): $0.693 \times (R_1 + R_2) \times C_1$
+- $T$ (Período Total): $0.693 \times (R_1 + 2R_2) \times C_1$
 
 
 ### Procedimiento
@@ -34,8 +46,15 @@ El 555 en modo astable opera como un multivibrador auto-oscilante, lo que signif
   * Osciloscopio y/o cronómetro (para verificación).
 
 
+
+
 ### Resultados
 
+Tiempo de Apagado ($T_{OFF}$)$0.693 \times R_2 \times C_1$$\mathbf{2.43 \text{ segundos}}
+
+Tiempo de Encendido ($T_{ON}$)$0.693 \times (R_1 + R_2) \times C_1$$\mathbf{2.49 \text{ segundos}}
+
+Período Total ($T$)$0.693 \times (R_1 + 2R_2) \times C_1$$\mathbf{4.92 \text{ segundos}}$
 
 
 ### Conclusion
