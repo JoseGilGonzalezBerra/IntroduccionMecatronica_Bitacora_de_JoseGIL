@@ -95,15 +95,15 @@ La interconexión se establece utilizando los pines del ESP32 para enviar señal
 
 - **Procedimiento**
   
-1. Montaje y Conexión del Hardware
+- Montaje y Conexión del Hardware
      
 1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
- * Conectar el pin de entrada 1 del driver a GPIO 25 (in1).
- * Conectar el pin de entrada 2 del driver a GPIO 26 (in2).
+ * Conectar el pin de entrada 1 del driver al pin 25 (in1).
+ * Conectar el pin de entrada 2 del driver al pin 26 (in2).
 
 2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.
 
-3.- Alimentación: Conectar la fuente de alimentación externa (ej. 9V) al pin de voltaje del Driver de Motor.
+3.- Alimentación: Conectar la fuente de alimentación externa al pin de voltaje del Driver de Motor.
  * Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
 
 4.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.
@@ -159,9 +159,117 @@ La práctica fue exitosa al demostrar el control básico de dirección y tempori
 
 
 
-## **Practica 4- Movimiento de servo-motores con ESP32**
+## **Practica 4 - Aceleracion y desaceleracion de motores con ESP32**
 
-### - 
+### Introduccion
 
-- Descripción: 
+La Práctica de Control de Velocidad con ESP32 tuvo como enfoque principal la aplicación de la Modulación por Ancho de Pulso (PWM) para lograr un control fino y gradual del movimiento de un motor de corriente continua (DC). El objetivo fue ir más allá del control simple de encendido/apagado para implementar una variación dinámica de la velocidad.
+
+- Objetivos:
+
+- Los objetivos principales de esta práctica fueron:
+   1.- Configurar y utilizar el hardware de PWM del microcontrolador ESP32 para generar una señal de velocidad.
+   2.- Implementar un algoritmo que permita al motor acelerar progresivamente hasta su velocidad máxima.
+   3.- Implementar un algoritmo que, al alcanzar la velocidad máxima o un umbral predefinido, inicie una desaceleración o un cambio en la rampa de velocidad.
+
+### Marco Teorico
+
+- Motores DC (Actuador):
+
+El Motor DC es el actuador cuya velocidad se controla. Su velocidad de rotación es directamente proporcional al voltaje promedio que recibe. La dirección de giro se mantiene fija en esta práctica mediante una polaridad constante.
+
+- Driver de Motor (Puente H)
+
+El Driver de Motor (Puente H) es esencial para suministrar la alta corriente que el ESP32 no puede proveer. En esta práctica, el Puente H cumple dos funciones:
+
+ * Control de Dirección: Los pines in1 y in2 se fijan en un estado lógico (1 y 0) para mantener una dirección constante.
+ * Control de Velocidad: El pin PWM del ESP32 se conecta al pin de Enable del driver para modular el voltaje promedio que llega al motor.
+
+- Modulación por Ancho de Pulso (PWM):
+
+El PWM es la técnica central para el control de velocidad. El ESP32 utiliza la API ledc para generar una señal digital cuyo ciclo de trabajo (el tiempo que la señal está en ALTO) varía.
+
+ * ledcAttachChannel(pin, freq, bits, channel): Inicializa un canal PWM. En el código, la resolución de 8 bits define que la velocidad varía de $0$ (apagado) a $255$ (máximo).
+ * 
+ * ledcWrite(): Es la función que establece el ciclo de trabajo, controlando directamente la velocidad del motor.
+
+
+### Procedimiento
+
+- **Materiales y Equipo**
+
+1.- Microcontrolador ESP32 
+2.- Motor de Corriente Continua 
+3.- Módulo Puente H
+4.- Protoboard
+5.- Cables Jumper
+6.- Fuente de Alimentación Externa (para el motor)
+7.- Computadora con IDE de Arduino
+8.- Cable USB (para el ESP32)
+
+- **Procedimiento**
+  
+1. Montaje y Conexión del Hardware
+     
+1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
+ * Conectar el pin de entrada 1 del driver a pin 32 (in1).
+ * Conectar el pin de entrada 2 del driver a pin 33 (in2).
+
+2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.
+
+3.- Conexión PWM: El pin 25 (definido implícitamente por el canal 0 en ledcAttachChannel) o un pin equivalente (esto debe revisarse, ya que ledcWrite usa el número de canal o el pin) se conecta al pin de Enable/Velocidad del driver.
+
+4.- Alimentación: Conectar la fuente de alimentación externa al pin de voltaje del Driver de Motor.
+ * Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
+
+5.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.
+
+
+6.- Subimos el codigo a la ESP32
+ 
+```cpp
+#define in1 32
+#define in2 33
+int var=20;
+ 
+void setup() {
+ 
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+  ledcAttachChannel(25, 1000, 8 , 0);
+  Serial.begin(115200);
+ 
+ 
+}
+ 
+void loop() {
+  Serial.println(var);
+  ledcWrite(25, var);
+  digitalWrite(in1,1);
+  digitalWrite(in2,0);
+  delay(1000);
+  var=var+20;
+  if(var>255){
+     var=var-80;
+  }  
+  delay(1000);
+ 
+}
+
+```
+
+
+### Resultados
+
+- Aceleración: El motor aumentó su velocidad en pasos de 20 unidades de PWM cada 2 segundos.
+
+- Desaceleración/Salto: En lugar de una desaceleración gradual, se observó un salto repentino a una velocidad menor cuando el contador var superó 255, seguido de una nueva aceleración.
+
+- Dirección: La dirección de giro se mantuvo fija durante todo el experimento.
+
+### Conclusion
+
+La práctica fue exitosa en la implementación de PWM para el control de velocidad del motor DC con el ESP32. Se logró un control dinámico donde el motor aceleró continuamente. El principal aprendizaje fue el uso de la función ledcWrite() para modular la velocidad y la importancia de la resolución de 8 bits (0-255). Sin embargo, el mecanismo implementado para manejar el exceso de velocidad (la caída de 80 unidades) resultó en un salto brusco de velocidad, no en una desaceleración progresiva y suave.
+
+
 
