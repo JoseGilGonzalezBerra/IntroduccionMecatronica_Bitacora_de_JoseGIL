@@ -25,13 +25,13 @@ Los objetivos principales de esta práctica fueron:
 ### Procedimiento
 
 - Materiales y Equipo
-  *Circuito Integrado 555
-  *LED 
-  *Resistencias: $R_1 = 1 k\Omega$, $R_2 = 10 k\Omega$, $R_4 = 1 k\Omega$ (limitadora del LED).
-  *Capacitor: $C_1 = 10 \mu F$, $C_2 = 0.01 \mu F$
-  *Fuente de alimentación de $9V$ (VCC).
-  *Protoboard y cables de conexión.
-  *Osciloscopio y/o cronómetro (para verificación).
+  * Circuito Integrado 555
+  * LED 
+  * Resistencias: $R_1 = 1 k\Omega$, $R_2 = 10 k\Omega$, $R_4 = 1 k\Omega$ (limitadora del LED).
+  * Capacitor: $C_1 = 10 \mu F$, $C_2 = 0.01 \mu F$
+  * Fuente de alimentación de $9V$ (VCC).
+  * Protoboard y cables de conexión.
+  * Osciloscopio y/o cronómetro (para verificación).
 
 
 ### Resultados
