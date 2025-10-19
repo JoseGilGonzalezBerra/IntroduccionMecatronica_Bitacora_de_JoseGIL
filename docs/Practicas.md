@@ -59,6 +59,78 @@ Los objetivos principales de esta práctica fueron:
 
 ## **Practica 3- Movimiento de motores con ESP32**
 
+### Introduccion y Objetivos
+
+
+### Marco Teorico
+
+
+
+
+### Procedimiento
+
+- **Materiales y Equipo**
+
+1.- Microcontrolador ESP32 
+2.- Motor de Corriente Continua 
+3.- Módulo Puente H
+4.- Protoboard
+5.- Cables Jumper
+6.- Fuente de Alimentación Externa (para el motor)
+7.- Computadora con IDE de Arduino
+8.- Cable USB (para el ESP32)
+
+- **Procedimiento**
+  
+- 1. Montaje y Conexión del Hardware
+     
+1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
+ * Conectar el pin de entrada 1 del driver a GPIO 25 (in1).
+ * Conectar el pin de entrada 2 del driver a GPIO 26 (in2).
+
+2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.
+
+3.- Alimentación: Conectar la fuente de alimentación externa (ej. 9V) al pin de voltaje del Driver de Motor.
+ * Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).
+
+4.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.
+
+
+- 2. Codigo
+ 
+```cpp
+#define in1 25
+#define in2 26
+
+void setup() {
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+}
+
+void loop() {
+
+    digitalWrite(in1, 1); 
+    digitalWrite(in2, 0); 
+    delay(3000);
+    digitalWrite(in1, 0); 
+    digitalWrite(in2, 0); 
+    delay(1000);
+    digitalWrite(in1, 0); 
+    digitalWrite(in2, 1); 
+    delay(1000); 
+  }
+
+```
+
+
+### Resultados
+
+
+
+### Conclusion
+
+
+
 - Descripción: Esta practica consistio en el funcionamiento de motores, como usarlos con las ESP32 y el codigo para hacerlos funcionar,  en esta practica teniamos que hacer que el motor acelerara poco a poco hasta la velocidad maxima y que luego desacelerara poco a poco hasta que se parara.
 
 -<img src="recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
