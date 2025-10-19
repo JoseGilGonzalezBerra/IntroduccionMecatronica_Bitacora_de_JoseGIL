@@ -80,7 +80,7 @@ La interconexión se establece utilizando los pines del ESP32 para enviar señal
 
 ### Procedimiento
 
-- **Materiales y Equipo**
+**Materiales y Equipo**
 
  - Microcontrolador ESP32
  - Motor de Corriente Continua
@@ -91,7 +91,7 @@ La interconexión se establece utilizando los pines del ESP32 para enviar señal
  - Computadora con IDE de Arduino
  - Cable USB (para el ESP32)
 
-- **Procedimiento**
+**Procedimiento**
   
 - Montaje y Conexión del Hardware
      
@@ -165,7 +165,7 @@ La Práctica de Control de Velocidad con ESP32 tuvo como enfoque principal la ap
 
 - Objetivos:
 
-- Los objetivos principales de esta práctica fueron:
+Los objetivos principales de esta práctica fueron:
    - Configurar y utilizar el hardware de PWM del microcontrolador ESP32 para generar una señal de velocidad.
    - Implementar un algoritmo que permita al motor acelerar progresivamente hasta su velocidad máxima.
    - Implementar un algoritmo que, al alcanzar la velocidad máxima o un umbral predefinido, inicie una desaceleración o un cambio en la rampa de velocidad.
@@ -174,7 +174,7 @@ La Práctica de Control de Velocidad con ESP32 tuvo como enfoque principal la ap
 
 - Motores DC (Actuador):
 
- - El Motor DC es el actuador cuya velocidad se controla. Su velocidad de rotación es directamente proporcional al voltaje promedio que recibe. La dirección de giro se mantiene fija en esta práctica mediante una polaridad constante.
+El Motor DC es el actuador cuya velocidad se controla. Su velocidad de rotación es directamente proporcional al voltaje promedio que recibe. La dirección de giro se mantiene fija en esta práctica mediante una polaridad constante.
 
 - Driver de Motor (Puente H)
 
@@ -194,7 +194,7 @@ El PWM es la técnica central para el control de velocidad. El ESP32 utiliza la 
 
 ### Procedimiento
 
-- **Materiales y Equipo**
+**Materiales y Equipo**
 
  - Microcontrolador ESP32 
  - Motor de Corriente Continua 
@@ -205,9 +205,9 @@ El PWM es la técnica central para el control de velocidad. El ESP32 utiliza la 
  - Computadora con IDE de Arduino
  - Cable USB (para el ESP32)
 
-- **Procedimiento**
-  
-1. Montaje y Conexión del Hardware
+**Procedimiento**
+
+- Montaje y Conexión del Hardware
      
 1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
  - Conectar el pin de entrada 1 del driver a pin 32 (in1).
