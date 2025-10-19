@@ -29,9 +29,9 @@ El diseño se basa en las siguientes ecuaciones, donde los valores utilizados so
 
 Formulas:
 
-- Tiempo de Apagado: $0.693 \times R_2 \times C_1$
-- Tiempo de Encendido: $0.693 \times (R_1 + R_2) \times C_1$
-- Período Total: $0.693 \times (R_1 + 2R_2) \times C_1$
+- Tiempo de Apagado: 0.693 (R_2) (C_1)
+- Tiempo de Encendido: 0.693 (R_1 + R_2)  (C_1)
+- Período Total: 0.693(R_1 + 2R_2) (C_1(
 
 
 ### Procedimiento
@@ -52,11 +52,14 @@ Formulas:
 2.-Cableado del CI: El CI 555 se colocó en la protoboard. Los Pines 8 (VCC) y 4 (Reset) se conectaron a VCC y los Pines 1 (GND) y 5 (Control) se conectaron a tierra.
 
 3.- Red RC (Temporización):
+
 - R_1 kOmega se conectó entre VCC y el Pin 7 (Discharge).
+  
 - R_2 35 kOmega se conectó entre el Pin 7 y los Pines 6 y 2 (unidos).
+  
 - C_1 100 mu F se conectó desde los Pines 6/2 a tierra.
 
-4.- Salida: El Pin 3 (Output) se conectó a la resistencia limitadora $R_4$ ($\mathbf{1 \text{ k}\Omega}$), y esta al ánodo del LED, cuyo cátodo fue a tierra.
+4.- Salida: El Pin 3 (Output) se conectó a la resistencia limitadora R_3 1 kOmega, y esta al ánodo del LED, cuyo cátodo fue a tierra.
 
 5.-Verificación: Se aplicó la fuente de alimentación para observar el parpadeo del LED y se utilizó el osciloscopio para medir el período de la señal.
 
