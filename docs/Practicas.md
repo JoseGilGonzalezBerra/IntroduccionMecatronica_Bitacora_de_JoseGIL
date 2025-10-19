@@ -10,7 +10,7 @@ La práctica se enmarcó dentro de la materia de Introducción a la Mecatrónica
 
 Comprender el principio de funcionamiento del circuito integrado 555 en su configuración astable.
  * Diseñar e implementar un circuito intermitente capaz de controlar el encendido y apagado de un LED.
- * Calcular y ajustar los componentes pasivos ($R_1$, $R_2$ y $C_1$) para lograr un periodo de oscilación total (T) entre 1 y 5 segundos.
+ * Calcular y ajustar los componentes pasivos R_1, R_2 y C_1 para lograr un periodo de oscilación total (T) entre 1 y 5 segundos.
 
 
 ### Marco Teorico
@@ -23,15 +23,15 @@ El 555 en modo astable opera como un multivibrador auto-oscilante, lo que signif
 
 El diseño se basa en las siguientes ecuaciones, donde los valores utilizados son: 
 
-- $R1 = 1 \text{ k}\Omega$, 
-- $R_2 = 35 \text{ k}\Omega$
-- $C_1 = 100 \mu F$:
+- R1 = 1 k Omega
+- R2 = 35 k Omega
+- C1 = 100 mu F
 
 Formulas:
 
-- $T_{OFF}$ (Tiempo de Apagado): $0.693 \times R_2 \times C_1$
-- $T_{ON}$ (Tiempo de Encendido): $0.693 \times (R_1 + R_2) \times C_1$
-- $T$ (Período Total): $0.693 \times (R_1 + 2R_2) \times C_1$
+- Tiempo de Apagado: $0.693 \times R_2 \times C_1$
+- Tiempo de Encendido: $0.693 \times (R_1 + R_2) \times C_1$
+- Período Total: $0.693 \times (R_1 + 2R_2) \times C_1$
 
 
 ### Procedimiento
@@ -40,7 +40,7 @@ Formulas:
   * Circuito Integrado 555
   * LED 
   * Resistencias de 1 y de 35
-  * Capacitor de 100 Uf
+  * Capacitor de 100 Mu F
   * Fuente de alimentación (VCC).
   * Protoboard y cables de conexión.
   * Osciloscopio y/o cronómetro (para verificación).
@@ -49,12 +49,12 @@ Formulas:
 
 1.- Cálculo: Se verificó el valor teórico del período con los componentes seleccionados, obteniendo $T \approx \mathbf{4.92 \text{ segundos}}$.
 
-2.-Cableado del CI: El CI 555 se colocó en la protoboard. Los Pines 8 (VCC) y 4 (Reset) se conectaron a VCC y los Pines 1 (GND) y 5 (Control) se conectaron a tierra (el Pin 5 con el filtro $C_2$).
+2.-Cableado del CI: El CI 555 se colocó en la protoboard. Los Pines 8 (VCC) y 4 (Reset) se conectaron a VCC y los Pines 1 (GND) y 5 (Control) se conectaron a tierra.
 
 3.- Red RC (Temporización):
-- $R_1$ ($\mathbf{1 \text{ k}\Omega}$) se conectó entre VCC y el Pin 7 (Discharge).
-- $R_2$ ($\mathbf{35 \text{ k}\Omega}$) se conectó entre el Pin 7 y los Pines 6 y 2 (unidos).
-- $C_1$ ($\mathbf{100 \mu F}$) se conectó desde los Pines 6/2 a tierra.
+- R_1 kOmega se conectó entre VCC y el Pin 7 (Discharge).
+- R_2 35 kOmega se conectó entre el Pin 7 y los Pines 6 y 2 (unidos).
+- C_1 100 mu F se conectó desde los Pines 6/2 a tierra.
 
 4.- Salida: El Pin 3 (Output) se conectó a la resistencia limitadora $R_4$ ($\mathbf{1 \text{ k}\Omega}$), y esta al ánodo del LED, cuyo cátodo fue a tierra.
 
@@ -64,16 +64,16 @@ Formulas:
 
 ### Resultados
 
-Tiempo de Apagado ($T_{OFF}$): 2.43 segundos
+Tiempo de Apagado: 2.43 segundos
 
-Tiempo de Encendido ($T_{ON}$): 2.49 segundos
+Tiempo de Encendido: 2.49 segundos
 
-Período Total ($T$): 4.92 segundos
+Período Total: 4.92 segundos
 
 
 ### Conclusion
 
-La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 \text{ k}\Omega$ y $C_1 = 100 \mu F$ produjo un parpadeo lento con un período cercano a $\mathbf{2 \text{ segundos}}$ entre encendido y apagado.
+La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 kOmega y $C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
 
 -<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
