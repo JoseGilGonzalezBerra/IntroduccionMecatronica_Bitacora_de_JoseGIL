@@ -44,16 +44,184 @@ Comprender el principio de funcionamiento del circuito integrado 555 en su confi
 -[Video de Encendio del Led](recursos/archivos/practica1video.mp4)
 
 
+## **Practica 2 - Encendido y apagado de LED con ESP32**
+
+### Introduccion y Objetivos
+
+Esta práctica es fundamental en la introducción a los sistemas embebidos y la Mecatrónica. Se centra en el control digital más básico: el manejo de una salida (output) mediante un microcontrolador. Se utilizó el ESP32 para controlar directamente un Diodo Emisor de Luz (LED), confirmando el correcto funcionamiento de los pines.
+
+Los objetivos principales de esta práctica fueron:
+
+ - Establecer la comunicación y programación del microcontrolador ESP32.
+ - Implementar un control digital ON/OFF (encendido y apagado) para el estado del LED.
 
 
-## **Practica 2- Encendido de LED con ESP32**
-
-- Descripción: 
+### Marco Teorico
 
 
+**Microcontrolador ESP32El** 
+
+ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de control. Sus pines de GPIO (General-Purpose Input/Output) pueden ser configurados para funcionar como salidas que aplican un voltaje (estado ALTO, generalmente $3.3 \text{V}$) o $0 \text{V}$ (estado BAJO).
 
 
-## **Practica 3- Movimiento de motores con ESP32**
+**Control Digital ON/OFF**
+
+El LED se controla mediante una lógica digital simple:
+
+Estado ALTO (1): El pin GPIO suministra voltaje, y el LED se enciende.
+Estado BAJO (0): El pin GPIO se pone a $0 \text{V}$, y el LED se apaga.
+
+
+**Funciones Clave**
+
+El código utiliza tres funciones principales del entorno de Arduino:
+
+`pinMode(pin, OUTPUT)`: Configura el pin seleccionado (led = 13) para que funcione como una salida de voltaje.
+
+`digitalWrite(pin, value)`: Envía una señal digital (ALTO o BAJO) al pin.
+
+`delay(ms)`: Pausa la ejecución del código por el número de milisegundos (ms) especificado, estableciendo la temporización del parpadeo.
+
+
+### Procedimiento
+
+**Materiales y Equipo**
+  * Microcontrolador ESP32
+  * LED
+  * Resistencias
+  * Cables Jumpers
+  * Protoboards
+  * Computadora con IDE de Arduino
+
+**Procedimiento para conexion**
+
+1.- Se conectó el pin ánodo (pata larga) del LED al pin GPIO 13 del ESP32, en serie con la resistencia limitadora.
+
+2.- El cátodo (pata corta) del LED se conectó a la línea de tierra (GND) del ESP32.
+
+3.- Subimos el codigo a la ESP32
+
+```
+const int led = 13;
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(led, OUTPUT);
+}
+
+void loop() {
+  digitalWrite(led, 1);
+  delay(1000);
+  digitalWrite(led, 0);
+  delay(1000);
+}
+
+```
+
+
+
+### Resultados
+
+La actividad fue completamente exitosa y demostró el control digital del microcontrolador.
+
+- Comportamiento Observado: El LED comenzó a parpadear de forma rítmica e ininterrumpida tan pronto como se cargó el código.
+- Temporización: El tiempo de encendido fue de $\mathbf{1}$ segundo y el tiempo de apagado fue de $\mathbf{1}$ segundo, cumpliendo con la temporización programada en el código.
+
+
+### Conclusion
+
+Concluyó con éxito, demostrando el control esencial de las salidas digitales del ESP32. Se logró programar un parpadeo intermitente con un periodo de 2 segundos (1 s encendido, 1 s apagado). El principal aprendizaje fue la correcta aplicación de pinMode() para la configuración y digitalWrite() para la conmutación de estados
+
+
+
+## **Practica 3- Encendido de LED con ESP32 y un botón**
+
+### Introducción
+
+El objetivo fue establecer la comunicación bidireccional entre el ESP32 y el mundo exterior, utilizando un botón pulsador como entrada digital para gestionar directamente el estado de un LED como salida.
+
+**Objetivos**
+
+Los objetivos principales de esta actividad fueron:
+
+ - Configurar un pin GPIO del ESP32 como entrada para leer el estado del botón.
+ - Configurar otro pin GPIO como salida para controlar el LED.
+ - Implementar la lógica de control para que el LED se encienda únicamente cuando se detecte la pulsación del botón (estado ALTO).
+
+
+### Marco Teorico
+
+
+
+### Procedimiento
+
+**Materiales**
+
+ - Microcontrolador ESP32
+ - LED
+ - Resistencia limitadora (para el LED)
+ - Resistencia
+ - Botón Pulsador de cuatro patas.
+ - Cables Jumper
+ - Protoboard.
+ - Computadora con Arduino IDE 
+
+**Procedimiento de la conexion**
+
+1.- Conexión del LED: 
+
+-El LED se conecta al GPIO 33, con su resistencia limitadora a GND.
+
+2.- Conexión del Botón:
+
+- Un terminal del botón se conecta a GPIO 32.
+- Otro terminal del botón se conecta a la fuente de voltaje (3.3V).
+- Se conecta una resistencia del pin GPIO 32 a Tierra (GND).
+
+3.- Generamos el codigo y se lo subimos a la ESP32:
+
+```
+const int led = 33;
+const int btn = 32;
+
+void setup() {
+  Serial.begin(115200);
+  pinMode(led, OUTPUT);
+  pinMode(btn, INPUT);
+}
+
+void loop() {
+  int estado = digitalRead(btn);
+  if (estado == 1) {
+    digitalWrite(led, 1);
+  } else {
+    digitalWrite(led, 0);
+  }
+}
+
+```
+
+### Resultados
+
+La actividad fue exitosa, estableciendo un control directo y en tiempo real sobre el LED. El LED permaneció apagado mientras el botón estaba en reposo. Al presionar y mantener el botón, el LED se encendió de forma inmediata. Al soltar el botón, el LED se apagó de forma instantánea.
+
+
+### Conclusion
+
+La práctica fue exitosa al implementar el control de un LED mediante una entrada digital, consolidando el uso del ESP32 para la interacción en tiempo real. Se demostró la capacidad de leer el estado de un interruptor `(digitalRead)` y usar esa información para controlar una salida `(digitalWrite)`
+
+
+
+## **Practica 4 - Encendido de Led con ESP32 y Bluetooth**
+
+
+
+
+
+
+
+
+## **Practica 5- Movimiento de motores con ESP32**
 
 ### Introduccion
 
@@ -157,7 +325,7 @@ La práctica fue exitosa al demostrar el control básico de dirección y tempori
 
 
 
-## **Practica 4 - Aceleracion y desaceleracion de motores con ESP32**
+## **Practica 6 - Aceleracion y desaceleracion de motores con ESP32**
 
 ### Introduccion
 
