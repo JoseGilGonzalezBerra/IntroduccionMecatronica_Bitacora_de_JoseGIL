@@ -140,7 +140,7 @@ La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 55
 
 ## **Practica 2 - Encendido y apagado de LED con ESP32**
 
-### Introduccion y Objetivos
+### Introduccion
 
 Esta práctica es fundamental en la introducción a los sistemas embebidos y la Mecatrónica. Se centra en el control digital más básico: el manejo de una salida (output) mediante un microcontrolador. Se utilizó el ESP32 para controlar directamente un Diodo Emisor de Luz (LED), confirmando el correcto funcionamiento de los pines.
 
