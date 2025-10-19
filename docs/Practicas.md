@@ -174,6 +174,9 @@ Concluyó con éxito, demostrando el control esencial de las salidas digitales d
 
 [Video de Encendio del Led](recursos/archivos/videoLED1.mp4)
 
+!!! note "Nota"
+    Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos
+
 
 ## **Practica 3- Encendido de LED con ESP32 y un botón**
 
@@ -263,6 +266,8 @@ La práctica fue exitosa al implementar el control de un LED mediante una entrad
 
 [Video de Encendio del Led](recursos/archivos/videoledboton.mp4)
 
+!!! note "Nota"
+    Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos
 
 
 
@@ -356,7 +361,8 @@ Concluyó exitosamente con la implementación del control remoto de un LED media
 
 [Video de Encendio del Led](recursos/archivos/videoLEDbluetooth.mp4)
 
-
+!!! note "Nota"
+    Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos
 
 
 ## **Practica 5- Movimiento de motores con ESP32**
