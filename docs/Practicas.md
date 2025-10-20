@@ -76,7 +76,7 @@ Formulas:
 
 ### Conclusion
 
-La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 kOmega y $C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
+La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de R_2 = 35 kOmega y C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
 
 <img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
@@ -101,7 +101,7 @@ Los objetivos principales de esta práctica fueron:
 
 **Microcontrolador ESP32El** 
 
-ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de control. Sus pines de GPIO (General-Purpose Input/Output) pueden ser configurados para funcionar como salidas que aplican un voltaje (estado ALTO, generalmente $3.3 \text{V}$) o $0 \text{V}$ (estado BAJO).
+ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de control. Sus pines de GPIO (General-Purpose Input/Output) pueden ser configurados para funcionar como salidas que aplican un voltaje (estado ALTO, generalmente 3.3 o 0 estado BAJO).
 
 
 **Control Digital ON/OFF**
@@ -109,7 +109,7 @@ ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de c
 El LED se controla mediante una lógica digital simple:
 
 Estado ALTO (1): El pin GPIO suministra voltaje, y el LED se enciende.
-Estado BAJO (0): El pin GPIO se pone a $0 \text{V}$, y el LED se apaga.
+Estado BAJO (0): El pin GPIO se pone a 0, y el LED se apaga.
 
 
 **Funciones Clave**
