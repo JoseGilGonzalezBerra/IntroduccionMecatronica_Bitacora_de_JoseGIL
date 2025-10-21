@@ -1,5 +1,3 @@
-# **Pagina Bitacora**
-
 # Integrantes de equipo:
 
 
