@@ -76,14 +76,13 @@ Formulas:
 
 ### Conclusion
 
-La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de R_2 = 35 kOmega y C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
+La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 kOmega y $C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
 
-<img src="./recursos/imgs/practica1led.jpg" width="300"  alt="Diagrama del sistema">
+<img src="recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
 <video controls width="400">
  <source src="./recursos/archivos/practica1video.mp4" type="video/mp4">
 </video>
-
 
 [Video de Encendio del Led](recursos/archivos/practica1video.mp4)
 
@@ -106,7 +105,7 @@ Los objetivos principales de esta práctica fueron:
 
 **Microcontrolador ESP32El** 
 
-ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de control. Sus pines de GPIO (General-Purpose Input/Output) pueden ser configurados para funcionar como salidas que aplican un voltaje (estado ALTO, generalmente 3.3 o 0 estado BAJO).
+ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de control. Sus pines de GPIO (General-Purpose Input/Output) pueden ser configurados para funcionar como salidas que aplican un voltaje (estado ALTO, generalmente 3.3 o 0 (estado BAJO).
 
 
 **Control Digital ON/OFF**
@@ -114,7 +113,7 @@ ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de c
 El LED se controla mediante una lógica digital simple:
 
 Estado ALTO (1): El pin GPIO suministra voltaje, y el LED se enciende.
-Estado BAJO (0): El pin GPIO se pone a 0, y el LED se apaga.
+Estado BAJO (0): El pin GPIO se pone a $0 , y el LED se apaga.
 
 
 **Funciones Clave**
@@ -177,10 +176,15 @@ La actividad fue completamente exitosa y demostró el control digital del microc
 
 Concluyó con éxito, demostrando el control esencial de las salidas digitales del ESP32. Se logró programar un parpadeo intermitente con un periodo de 2 segundos (1 s encendido, 1 s apagado). El principal aprendizaje fue la correcta aplicación de pinMode() para la configuración y digitalWrite() para la conmutación de estados
 
+<video controls width="400">
+ <source src="./recursos/archivos/videoLED1.mp4" type="video/mp4">
+</video>
+
 [Video de Encendio del Led](recursos/archivos/videoLED1.mp4)
 
 !!! note "Nota"
     Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos
+
 
 
 ## **Practica 3- Encendido de LED con ESP32 y un botón**
@@ -268,6 +272,10 @@ La actividad fue exitosa, estableciendo un control directo y en tiempo real sobr
 ### Conclusion
 
 La práctica fue exitosa al implementar el control de un LED mediante una entrada digital, consolidando el uso del ESP32 para la interacción en tiempo real. Se demostró la capacidad de leer el estado de un interruptor `(digitalRead)` y usar esa información para controlar una salida `(digitalWrite)`
+
+<video controls width="400">
+ <source src="./recursos/archivos/videoledboton.mp4" type="video/mp4">
+</video>
 
 [Video de Encendio del Led](recursos/archivos/videoledboton.mp4)
 
@@ -364,10 +372,16 @@ El dispositivo "AbrahamESP32" fue detectado y se pudo establecer el emparejamien
 
 Concluyó exitosamente con la implementación del control remoto de un LED mediante Bluetooth Serial en el ESP32. Se logró configurar el enlace inalámbrico y demostrar la capacidad del microcontrolador para procesar comandos de texto recibidos por aire para manipular una salida digital.
 
+<video controls width="400">
+ <source src="./recursos/archivos/videoLEDbluetooth.mp4" type="video/mp4">
+</video>
+
+
 [Video de Encendio del Led](recursos/archivos/videoLEDbluetooth.mp4)
 
 !!! note "Nota"
     Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos
+
 
 
 ## **Practica 5- Movimiento de motores con ESP32**
@@ -468,6 +482,10 @@ La práctica fue exitosa al demostrar el control básico de dirección y tempori
 <img src="recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
 <img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
 <img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
+
+<video controls width="400">
+ <source src="./recursos/archivos/practicamotores.mp4" type="video/mp4">
+</video>
 
 [Video de Encendidi de Motores con ESP32](recursos/archivos/practicamotores.mp4)
 
@@ -585,6 +603,3 @@ void loop() {
 ### Conclusion
 
 La práctica fue exitosa en la implementación de PWM para el control de velocidad del motor DC con el ESP32. Se logró un control dinámico donde el motor aceleró continuamente. El principal aprendizaje fue el uso de la función ledcWrite() para modular la velocidad y la importancia de la resolución de 8 bits (0-255). Sin embargo, el mecanismo implementado para manejar el exceso de velocidad (la caída de 80 unidades) resultó en un salto brusco de velocidad, no en una desaceleración progresiva y suave.
-
-
-
