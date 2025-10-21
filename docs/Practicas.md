@@ -78,7 +78,7 @@ Formulas:
 
 La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de R_2 = 35 kOmega y C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.
 
-<img src="../recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
+<img src="./recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
 
 [Video de Encendio del Led](recursos/archivos/practica1video.mp4)
 
