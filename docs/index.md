@@ -231,7 +231,7 @@ La actividad fue completamente exitosa y demostró el control digital del microc
 Concluyó con éxito, demostrando el control esencial de las salidas digitales del ESP32. Se logró programar un parpadeo intermitente con un periodo de 2 segundos (1 s encendido, 1 s apagado). El principal aprendizaje fue la correcta aplicación de pinMode() para la configuración y digitalWrite() para la conmutación de estados
 
 <video controls width="400">
- <source src="recursos/archivos/videoLED1.mp4" type="video/mp4">
+ <source src="./recursos/archivos/videoLED1.mp4" type="video/mp4">
 </video>
 
 [Video de Encendio del Led](recursos/archivos/videoLED1.mp4)
@@ -427,7 +427,7 @@ El dispositivo "AbrahamESP32" fue detectado y se pudo establecer el emparejamien
 Concluyó exitosamente con la implementación del control remoto de un LED mediante Bluetooth Serial en el ESP32. Se logró configurar el enlace inalámbrico y demostrar la capacidad del microcontrolador para procesar comandos de texto recibidos por aire para manipular una salida digital.
 
 <video controls width="400">
- <source src="recursos/archivos/videoLEDbluetooth.mp4" type="video/mp4">
+ <source src="./recursos/archivos/videoLEDbluetooth.mp4" type="video/mp4">
 </video>
 
 
@@ -532,13 +532,13 @@ El circuito implementado con el ESP32 ejecutó la secuencia programada, logrando
 La práctica fue exitosa al demostrar el control básico de dirección y temporización de un motor DC utilizando el ESP32 y un driver Puente H. Se logró controlar la dirección de giro y la duración de cada estado (avance, paro y reversa) mediante los comandos digitalWrite() y delay(). Esto confirmó la comprensión de la lógica del driver y la capacidad del ESP32 para manejar la actuación.
 
 
-<img src="recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
-<img src="recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
-<img src="recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
-<img src="recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
+<img src="./recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
+<img src="./recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
+<img src="./recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
+<img src="./recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300">
 
 <video controls width="400">
- <source src="recursos/archivos/practicamotores.mp4" type="video/mp4">
+ <source src="./recursos/archivos/practicamotores.mp4" type="video/mp4">
 </video>
 
 [Video de Encendidi de Motores con ESP32](recursos/archivos/practicamotores.mp4)
