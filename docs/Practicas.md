@@ -80,7 +80,10 @@ La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 55
 
 <img src="./recursos/imgs/practica1led.jpg" width="300"  alt="Diagrama del sistema">
 
-practica1led.jpg
+<video controls width="400">
+ <source src="./recursos/archivos/practica1video.mp4" type="video/mp4">
+</video>
+
 
 [Video de Encendio del Led](recursos/archivos/practica1video.mp4)
 
