@@ -752,5 +752,13 @@ La práctica confirmó la utilidad de OpenCV para la adquisición y el filtrado 
 <img src="../recursos/imgs/videopr8.jpg" alt="Diagrama del sistema" width="300">
 <img src="../recursos/imgs/videopr9.jpg" alt="Diagrama del sistema" width="300">
 
+<video controls width="300">
+ <source src="../recursos/archivos/video_pr1.mp4" type="video/mp4">
+</video>
+
+<video controls width="300">
+ <source src="../recursos/archivos/video_pr2.mp4" type="video/mp4">
+</video>
+
 
 
