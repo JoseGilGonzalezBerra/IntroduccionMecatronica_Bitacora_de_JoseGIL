@@ -1,0 +1,1953 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../comandos/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Practicas de clase - Introducción a la Mecatronica - Bitacora</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#practicas-de-clase" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Introducción a la Mecatronica - Bitacora" class="md-header__button md-logo" aria-label="Introducción a la Mecatronica - Bitacora" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Introducción a la Mecatronica - Bitacora
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Practicas de clase
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Introducción a la Mecatronica - Bitacora" class="md-nav__button md-logo" aria-label="Introducción a la Mecatronica - Bitacora" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Introducción a la Mecatronica - Bitacora
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Integrantes de equipo:
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Practicas de clase
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Practicas de clase
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#practica-1-encendido-de-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 1 - Encendido de LED
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 1 - Encendido de LED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-2-encendido-y-apagado-de-led-con-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 2 - Encendido y apagado de LED con ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 2 - Encendido y apagado de LED con ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-3-encendido-de-led-con-esp32-y-un-boton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 3- Encendido de LED con ESP32 y un botón
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 3- Encendido de LED con ESP32 y un botón">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-4-encendido-de-led-con-esp32-y-bluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 4 - Encendido de Led con ESP32 y Bluetooth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 4 - Encendido de Led con ESP32 y Bluetooth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-5-movimiento-de-motores-con-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 5- Movimiento de motores con ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 5- Movimiento de motores con ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-6-aceleracion-y-desaceleracion-de-motores-con-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 6 - Aceleracion y desaceleracion de motores con ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 6 - Aceleracion y desaceleracion de motores con ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-7-reproduccion-del-video-de-la-camara-con-codigo-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 7 - Reproduccion del video de la camara con codigo de Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 7 - Reproduccion del video de la camara con codigo de Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../comandos/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Encabezados
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ejemplo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    📚 Ejemplo de Documentación del Proyecto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gitcmds/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    🚀 Comandos básicos de Git (primeros pasos)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#practica-1-encendido-de-led" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 1 - Encendido de LED
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 1 - Encendido de LED">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-2-encendido-y-apagado-de-led-con-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 2 - Encendido y apagado de LED con ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 2 - Encendido y apagado de LED con ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-3-encendido-de-led-con-esp32-y-un-boton" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 3- Encendido de LED con ESP32 y un botón
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 3- Encendido de LED con ESP32 y un botón">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introducción
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-4-encendido-de-led-con-esp32-y-bluetooth" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 4 - Encendido de Led con ESP32 y Bluetooth
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 4 - Encendido de Led con ESP32 y Bluetooth">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-5-movimiento-de-motores-con-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 5- Movimiento de motores con ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 5- Movimiento de motores con ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-6-aceleracion-y-desaceleracion-de-motores-con-esp32" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 6 - Aceleracion y desaceleracion de motores con ESP32
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 6 - Aceleracion y desaceleracion de motores con ESP32">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practica-7-reproduccion-del-video-de-la-camara-con-codigo-de-python" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practica 7 - Reproduccion del video de la camara con codigo de Python
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practica 7 - Reproduccion del video de la camara con codigo de Python">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#introduccion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Introduccion
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marco-teorico_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Teorico
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimiento_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resultados_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resultados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conclusion_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Conclusion
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="practicas-de-clase"><strong>Practicas de clase</strong></h1>
+<hr />
+<h2 id="practica-1-encendido-de-led"><strong>Practica 1 - Encendido de LED</strong></h2>
+<h3 id="introduccion">Introduccion</h3>
+<p>La práctica se enmarcó dentro de la materia de Introducción a la Mecatrónica y tuvo como finalidad el estudio y la aplicación del circuito integrado temporizador 555. El manejo de temporizadores y la generación de señales de reloj son fundamentales para el diseño de sistemas de control y automatización.</p>
+<ul>
+<li>Los objetivos principales de esta práctica fueron:</li>
+</ul>
+<p>Comprender el principio de funcionamiento del circuito integrado 555 en su configuración astable.
+ * Diseñar e implementar un circuito intermitente capaz de controlar el encendido y apagado de un LED.
+ * Calcular y ajustar los componentes pasivos R_1, R_2 y C_1 para lograr un periodo de oscilación total (T) entre 1 y 5 segundos.</p>
+<h3 id="marco-teorico">Marco Teorico</h3>
+<p><strong>Circuito Integrado 555 (Modo Astable):</strong></p>
+<p>El 555 en modo astable opera como un multivibrador auto-oscilante, lo que significa que su salida (Pin 3) conmuta continuamente entre el estado ALTO y BAJO sin necesidad de una entrada externa. El tiempo que permanece en cada estado lo define la carga y descarga del capacitor a través de las resistencias.</p>
+<p><strong>Fórmulas de Cálculo y Componentes:</strong></p>
+<p>El diseño se basa en las siguientes ecuaciones, donde los valores utilizados son: </p>
+<ul>
+<li>R1 = 1 k Omega</li>
+<li>R2 = 35 k Omega</li>
+<li>C1 = 100 mu F</li>
+</ul>
+<p>Formulas:</p>
+<ul>
+<li>Tiempo de Apagado: 0.693 (R_2) (C_1)</li>
+<li>Tiempo de Encendido: 0.693 (R_1 + R_2)  (C_1)</li>
+<li>Período Total: 0.693(R_1 + 2R_2) (C_1(</li>
+</ul>
+<h3 id="procedimiento">Procedimiento</h3>
+<ul>
+<li>Materiales y Equipo</li>
+<li>Circuito Integrado 555</li>
+<li>LED </li>
+<li>Resistencias de 1 y de 35</li>
+<li>Capacitor de 100 Mu F</li>
+<li>Fuente de alimentación (VCC).</li>
+<li>Protoboard y cables de conexión.</li>
+<li>Osciloscopio y/o cronómetro (para verificación).</li>
+</ul>
+<p><strong>Procedimiento de Montaje</strong></p>
+<p>1.- Cálculo: Se verificó el valor teórico del período con los componentes seleccionados, obteniendo $T \approx \mathbf{4.92 \text{ segundos}}$.</p>
+<p>2.-Cableado del CI: El CI 555 se colocó en la protoboard. Los Pines 8 (VCC) y 4 (Reset) se conectaron a VCC y los Pines 1 (GND) y 5 (Control) se conectaron a tierra.</p>
+<p>3.- Red RC (Temporización):</p>
+<ul>
+<li>
+<p>R_1 kOmega se conectó entre VCC y el Pin 7 (Discharge).</p>
+</li>
+<li>
+<p>R_2 35 kOmega se conectó entre el Pin 7 y los Pines 6 y 2 (unidos).</p>
+</li>
+<li>
+<p>C_1 100 mu F se conectó desde los Pines 6/2 a tierra.</p>
+</li>
+</ul>
+<p>4.- Salida: El Pin 3 (Output) se conectó a la resistencia limitadora R_3 1 kOmega, y esta al ánodo del LED, cuyo cátodo fue a tierra.</p>
+<p>5.-Verificación: Se aplicó la fuente de alimentación para observar el parpadeo del LED y se utilizó el osciloscopio para medir el período de la señal.</p>
+<h3 id="resultados">Resultados</h3>
+<ul>
+<li>
+<p>Tiempo de Apagado: 2.43 segundos</p>
+</li>
+<li>
+<p>Tiempo de Encendido: 2.49 segundos</p>
+</li>
+<li>
+<p>Período Total: 4.92 segundos</p>
+</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>La práctica fue exitosa al implementar el oscilador Astable utilizando el CI 555 y demostró la capacidad de controlar el tiempo de un circuito analógico mediante la correcta selección de la red RC. El uso de $R_2 = 35 kOmega y $C_1 = 100 mu F produjo un parpadeo lento con un período cercano a 2 segundos entre encendido y apagado.</p>
+<p><img src="../recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300"></p>
+<video controls width="400">
+ <source src="../recursos/archivos/practica1video.mp4" type="video/mp4">
+</video>
+
+<p><a href="../recursos/archivos/practica1video.mp4">Video de Encendio del Led</a></p>
+<h2 id="practica-2-encendido-y-apagado-de-led-con-esp32"><strong>Practica 2 - Encendido y apagado de LED con ESP32</strong></h2>
+<h3 id="introduccion_1">Introduccion</h3>
+<p>Esta práctica es fundamental en la introducción a los sistemas embebidos y la Mecatrónica. Se centra en el control digital más básico: el manejo de una salida (output) mediante un microcontrolador. Se utilizó el ESP32 para controlar directamente un Diodo Emisor de Luz (LED), confirmando el correcto funcionamiento de los pines.</p>
+<p>Los objetivos principales de esta práctica fueron:</p>
+<ul>
+<li>Establecer la comunicación y programación del microcontrolador ESP32.</li>
+<li>Implementar un control digital ON/OFF (encendido y apagado) para el estado del LED.</li>
+</ul>
+<h3 id="marco-teorico_1">Marco Teorico</h3>
+<p><strong>Microcontrolador ESP32El</strong> </p>
+<p>ESP32 es la placa de desarrollo utilizada para alojar y ejecutar el código de control. Sus pines de GPIO (General-Purpose Input/Output) pueden ser configurados para funcionar como salidas que aplican un voltaje (estado ALTO, generalmente 3.3 o 0 (estado BAJO).</p>
+<p><strong>Control Digital ON/OFF</strong></p>
+<p>El LED se controla mediante una lógica digital simple:</p>
+<p>Estado ALTO (1): El pin GPIO suministra voltaje, y el LED se enciende.
+Estado BAJO (0): El pin GPIO se pone a $0 , y el LED se apaga.</p>
+<p><strong>Funciones Clave</strong></p>
+<p>El código utiliza tres funciones principales del entorno de Arduino:</p>
+<p><code>pinMode(pin, OUTPUT)</code>: Configura el pin seleccionado (led = 13) para que funcione como una salida de voltaje.</p>
+<p><code>digitalWrite(pin, value)</code>: Envía una señal digital (ALTO o BAJO) al pin.</p>
+<p><code>delay(ms)</code>: Pausa la ejecución del código por el número de milisegundos (ms) especificado, estableciendo la temporización del parpadeo.</p>
+<h3 id="procedimiento_1">Procedimiento</h3>
+<p><strong>Materiales y Equipo</strong>
+  * Microcontrolador ESP32
+  * LED
+  * Resistencias
+  * Cables Jumpers
+  * Protoboards
+  * Computadora con IDE de Arduino</p>
+<p><strong>Procedimiento para conexion</strong></p>
+<p>1.- Se conectó el pin ánodo (pata larga) del LED al pin GPIO 13 del ESP32, en serie con la resistencia limitadora.</p>
+<p>2.- El cátodo (pata corta) del LED se conectó a la línea de tierra (GND) del ESP32.</p>
+<p>3.- Subimos el codigo a la ESP32</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>const int led = 13;
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>void setup() {
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>  Serial.begin(115200);
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>  pinMode(led, OUTPUT);
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>}
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>void loop() {
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>  digitalWrite(led, 1);
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>  delay(1000);
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>  digitalWrite(led, 0);
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>  delay(1000);
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>}
+</span></code></pre></div>
+<h3 id="resultados_1">Resultados</h3>
+<p>La actividad fue completamente exitosa y demostró el control digital del microcontrolador.</p>
+<ul>
+<li>Comportamiento Observado: El LED comenzó a parpadear de forma rítmica e ininterrumpida tan pronto como se cargó el código.</li>
+<li>Temporización: El tiempo de encendido fue de $\mathbf{1}$ segundo y el tiempo de apagado fue de 1 segundo, cumpliendo con la temporización programada en el código.</li>
+</ul>
+<h3 id="conclusion_1">Conclusion</h3>
+<p>Concluyó con éxito, demostrando el control esencial de las salidas digitales del ESP32. Se logró programar un parpadeo intermitente con un periodo de 2 segundos (1 s encendido, 1 s apagado). El principal aprendizaje fue la correcta aplicación de pinMode() para la configuración y digitalWrite() para la conmutación de estados</p>
+<video controls width="400">
+ <source src="../recursos/archivos/videoLED1.mp4" type="video/mp4">
+</video>
+
+<p><a href="../recursos/archivos/videoLED1.mp4">Video de Encendio del Led</a></p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos</p>
+</div>
+<h2 id="practica-3-encendido-de-led-con-esp32-y-un-boton"><strong>Practica 3- Encendido de LED con ESP32 y un botón</strong></h2>
+<h3 id="introduccion_2">Introducción</h3>
+<p>El objetivo fue establecer la comunicación bidireccional entre el ESP32 y el mundo exterior, utilizando un botón pulsador como entrada digital para gestionar directamente el estado de un LED como salida.</p>
+<p><strong>Objetivos</strong></p>
+<p>Los objetivos principales de esta actividad fueron:</p>
+<ul>
+<li>Configurar un pin del ESP32 como entrada para leer el estado del botón.</li>
+<li>Configurar otro pin como salida para controlar el LED.</li>
+<li>Implementar la lógica de control para que el LED se encienda únicamente cuando se detecte la pulsación del botón (estado ALTO).</li>
+</ul>
+<h3 id="marco-teorico_2">Marco Teorico</h3>
+<p><strong>Microcontrolador ESP32</strong></p>
+<p>El ESP32 es el sistema de control que aloja el código. El núcleo de la práctica es el manejo de los pines GPIO (Entrada/Salida de Propósito General), que pueden ser configurados de dos formas:</p>
+<ul>
+<li>Salida (OUTPUT): Envía una señal (voltaje) para controlar el LED.</li>
+<li>Entrada (INPUT): Lee el voltaje aplicado externamente por el botón.</li>
+</ul>
+<p><strong>Botón Pulsador y Resistencia Pull-down</strong></p>
+<p>El Botón Pulsador actúa como un interruptor. Al ser presionado, conecta el pin de entrada (GPIO 34) a la fuente de voltaje ($3.3 \text{V}$), lo que genera la señal ALTO (1) que el ESP32 debe leer. Idealmente, se usa una resistencia pull-down para asegurar que el pin siempre lea BAJO (0) cuando el botón está liberado, evitando lecturas erróneas.</p>
+<h3 id="procedimiento_2">Procedimiento</h3>
+<p><strong>Materiales</strong></p>
+<ul>
+<li>Microcontrolador ESP32</li>
+<li>LED</li>
+<li>Resistencia limitadora (para el LED)</li>
+<li>Resistencia Pull Down </li>
+<li>Botón Pulsador de cuatro patas.</li>
+<li>Cables Jumper</li>
+<li>Protoboard.</li>
+<li>Computadora con Arduino IDE </li>
+</ul>
+<p><strong>Procedimiento de la conexion</strong></p>
+<p>1.- Conexión del LED: </p>
+<p>-El LED se conecta al pin 33, con su resistencia limitadora a GND.</p>
+<p>2.- Conexión del Botón:</p>
+<ul>
+<li>Un terminal del botón se conecta al pin 34.</li>
+<li>Otro terminal del botón se conecta a la fuente de voltaje (3.3V).</li>
+<li>Se conecta una resistencia del pin  34 a Tierra (GND).</li>
+</ul>
+<p>3.- Generamos el codigo y se lo subimos a la ESP32:</p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>const int led = 33;
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>const int btn = 34;
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>void setup() {
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  Serial.begin(115200);
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  pinMode(led, OUTPUT);
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  pinMode(btn, INPUT);
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>}
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>void loop() {
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  int estado = digitalRead(btn);
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  if (estado == 1) {
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>    digitalWrite(led, 1);
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>  } else {
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>    digitalWrite(led, 0);
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  }
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>}
+</span></code></pre></div>
+<h3 id="resultados_2">Resultados</h3>
+<p>La actividad fue exitosa, estableciendo un control directo y en tiempo real sobre el LED. El LED permaneció apagado mientras el botón estaba en reposo. Al presionar y mantener el botón, el LED se encendió de forma inmediata. Al soltar el botón, el LED se apagó de forma instantánea.</p>
+<h3 id="conclusion_2">Conclusion</h3>
+<p>La práctica fue exitosa al implementar el control de un LED mediante una entrada digital, consolidando el uso del ESP32 para la interacción en tiempo real. Se demostró la capacidad de leer el estado de un interruptor <code>(digitalRead)</code> y usar esa información para controlar una salida <code>(digitalWrite)</code></p>
+<video controls width="400">
+ <source src="../recursos/archivos/videoledboton.mp4" type="video/mp4">
+</video>
+
+<p><a href="../recursos/archivos/videoledboton.mp4">Video de Encendio del Led</a></p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos</p>
+</div>
+<h2 id="practica-4-encendido-de-led-con-esp32-y-bluetooth"><strong>Practica 4 - Encendido de Led con ESP32 y Bluetooth</strong></h2>
+<h3 id="introduccion_3">Introduccion</h3>
+<p>Esta práctica marca la transición del control local (botones, temporización) al control remoto inalámbrico, utilizando la capacidad nativa de Bluetooth del microcontrolador ESP32. El objetivo fue establecer una comunicación serial a través de Bluetooth para enviar comandos simples de texto  desde un dispositivo externo (como un smartphone) y gestionar remotamente el estado de un LED.</p>
+<h3 id="marco-teorico_3">Marco Teorico</h3>
+<p><strong>Bluetooth Serial (SPP)</strong></p>
+<p>El ESP32 soporta múltiples protocolos, incluyendo Bluetooth Clásico para la comunicación Serial Profile (SPP). Esto permite que el ESP32 se comunique como un dispositivo de puerto serie virtual, siendo detectado y emparejado como un módulo Bluetooth tradicional (como el HC-05). La librería BluetoothSerial.h facilita esta funcionalidad, permitiendo enviar y recibir datos como si fuera una conexión serial por cable.</p>
+<p><strong>Comunicación Inalámbrica</strong></p>
+<p>El control se basa en la recepción de datos sin contacto físico.</p>
+<ul>
+<li>
+<p><code>SerialBT.begin()</code>: Asigna un nombre (en el código, "Abraham_ESP32") para que el dispositivo sea visible y se pueda emparejar.</p>
+</li>
+<li>
+<p><code>SerialBT.available()</code>: Es la función clave que verifica continuamente si hay comandos (datos) pendientes en el buffer de recepción inalámbrico.</p>
+</li>
+<li>
+<p><code>SerialBT.readString()</code>: Lee la cadena de texto completa enviada por el dispositivo remoto (el comando).</p>
+</li>
+</ul>
+<h3 id="procedimiento_3">Procedimiento</h3>
+<p><strong>Materiales</strong></p>
+<ul>
+<li>Microcontrolador ESP32</li>
+<li>LED</li>
+<li>Resistencia limitadora.</li>
+<li>Cables Jumper</li>
+<li>Protoboard.</li>
+<li>Dispositivo Remoto: Un smartphone o computadora con capacidad Bluetooth y una aplicación de terminal Serial Bluetooth para enviar los comandos</li>
+</ul>
+<p><strong>Procedimiento de conexion de cables y programación</strong></p>
+<p>1.- Los cables se mantienen conectados de la misma manera que en la practica anterior, solo cambiamos el codigo</p>
+<p>2.- Generamos el codigo y lo subimos a la ESP32:</p>
+<p><div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>#include &quot;BluetoothSerial.h&quot;
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>BluetoothSerial SerialBT;
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>const int led = 33;
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>void setup() {
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>  Serial.begin(115200);
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>  SerialBT.begin(&quot;AbrahamESP32&quot;); // Nombre del dispositivo Bluetooth
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>  pinMode(led, OUTPUT);
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>}
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>void loop() {
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a>  if (SerialBT.available()) {
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>    String mensaje = SerialBT.readString();
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a>    Serial.println(&quot;Recibido: &quot; + mensaje);
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>    if (mensaje == &quot;ON&quot;) {
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a>      digitalWrite(led, HIGH);
+</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>    } else if (mensaje == &quot;OFF&quot;) {
+</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>      digitalWrite(led, LOW);
+</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>    }
+</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a>  }
+</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>  delay(100);
+</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a>}
+</span></code></pre></div>
+3.- Con la aplicacion concetamos el celular via Bluetooth a la ESP32 y comprobamos que al escirbir "ON" se enciende y al escribir "OFF" se apaga el LED.</p>
+<h3 id="resultados_3">Resultados</h3>
+<p><strong>Conectividad:</strong> </p>
+<p>El dispositivo "AbrahamESP32" fue detectado y se pudo establecer el emparejamiento desde el dispositivo remoto.</p>
+<p><strong>Comportamiento del LED:</strong></p>
+<ul>
+<li>Al enviar el mensaje exacto "ON" desde la terminal Bluetooth, el LED se encendió.</li>
+<li>Al enviar el mensaje exacto "OFF", el LED se apagó.</li>
+<li>Cualquier otro comando o variación de texto no generó ninguna acción, confirmando la sensibilidad del código a la coincidencia exacta de la cadena de texto.</li>
+</ul>
+<h3 id="conclusion_3">Conclusion</h3>
+<p>Concluyó exitosamente con la implementación del control remoto de un LED mediante Bluetooth Serial en el ESP32. Se logró configurar el enlace inalámbrico y demostrar la capacidad del microcontrolador para procesar comandos de texto recibidos por aire para manipular una salida digital.</p>
+<video controls width="400">
+ <source src="../recursos/archivos/videoLEDbluetooth.mp4" type="video/mp4">
+</video>
+
+<p><a href="../recursos/archivos/videoLEDbluetooth.mp4">Video de Encendio del Led</a></p>
+<div class="admonition note">
+<p class="admonition-title">Nota</p>
+<p>Disculpe la falta de fotos, esa semana tuve un probelma y me robaron el celular y no pude tomar fotos</p>
+</div>
+<h2 id="practica-5-movimiento-de-motores-con-esp32"><strong>Practica 5- Movimiento de motores con ESP32</strong></h2>
+<h3 id="introduccion_4">Introduccion</h3>
+<p>La práctica tuvo como objetivo principal la integración de un sistema embebido (ESP32) con un sistema de actuación (motor DC) utilizando un módulo controlador Puente H. Esta práctica es fundamental en el campo de la Mecatrónica, ya que establece las bases para el control de movimiento y la dirección de actuadores en sistemas automatizados y robótica.</p>
+<ul>
+<li>
+<p>Objetivos:</p>
+</li>
+<li>
+<p>Los objetivos principales de esta práctica fueron:</p>
+</li>
+<li>Establecer la comunicación y el control de un motor de corriente continua (DC) mediante el microcontrolador ESP32 y un driver de motor.</li>
+<li>Implementar el control de dirección del motor, logrando que gire en un sentido, se detenga y luego gire en el sentido opuesto.</li>
+<li>Programar y controlar la temporización de cada estado de movimiento (avance, paro y reversa) utilizando funciones de retardo (delay).</li>
+</ul>
+<h3 id="marco-teorico_4">Marco Teorico</h3>
+<ul>
+<li>
+<p>Motores DC (Actuador):-
+El Motor de Corriente Continua (DC) es el componente que convierte la energía eléctrica en movimiento mecánico. Su característica esencial en esta práctica es que su dirección de giro está determinada por la polaridad del voltaje que se le aplica a sus terminales.</p>
+</li>
+<li>
+<p>Driver de Motor (Puente H):-
+El circuito Puente H es un módulo de potencia indispensable que actúa como intermediario. Su función principal es doble: primero, suministrar la alta corriente necesaria para el motor utilizando una fuente externa (ya que el ESP32 no puede hacerlo); y segundo, controlar la dirección del motor. El Puente H invierte la polaridad del voltaje aplicado al motor según las señales lógicas que recibe.</p>
+</li>
+<li>
+<p>Interconexión y Control Lógico:-
+La interconexión se establece utilizando los pines del ESP32 para enviar señales de control al Puente H. Específicamente, dos pines del ESP32 (in1 e in2) se conectan a las entradas lógicas del Puente H.</p>
+</li>
+</ul>
+<h3 id="procedimiento_4">Procedimiento</h3>
+<p><strong>Materiales y Equipo</strong></p>
+<ul>
+<li>Microcontrolador ESP32</li>
+<li>Motor de Corriente Continua</li>
+<li>Módulo Puente H</li>
+<li>Protoboard</li>
+<li>Cables Jumper</li>
+<li>Fuente de Alimentación Externa (para el motor)</li>
+<li>Computadora con IDE de Arduino</li>
+<li>Cable USB (para el ESP32)</li>
+</ul>
+<p><strong>Procedimiento</strong></p>
+<ul>
+<li>Montaje y Conexión del Hardware</li>
+</ul>
+<p>1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
+ - Conectar el pin de entrada 1 del driver al pin 25 (in1).
+ - Conectar el pin de entrada 2 del driver al pin 26 (in2).</p>
+<p>2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.</p>
+<p>3.- Alimentación: Conectar la fuente de alimentación externa al pin de voltaje del Driver de Motor.
+ - Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).</p>
+<p>4.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.</p>
+<p>5.- Subimo el codigo a la ESP32</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="cp">#define in1 25</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="cp">#define in2 26</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">in2</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="p">}</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">3000</span><span class="p">);</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in2</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="w">    </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in2</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-19"><a id="__codelineno-3-19" name="__codelineno-3-19" href="#__codelineno-3-19"></a><span class="w">    </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span><span class="w"> </span>
+</span><span id="__span-3-20"><a id="__codelineno-3-20" name="__codelineno-3-20" href="#__codelineno-3-20"></a><span class="w">  </span><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="resultados_4">Resultados</h3>
+<p>El circuito implementado con el ESP32 ejecutó la secuencia programada, logrando el control de la dirección y la temporización del motor.</p>
+<ul>
+<li>Sentido 1 (Avance/Giro): El motor giró en la primera dirección durante 3 segundos (delay(3000)).</li>
+<li>Paro por Inercia: El motor se detuvo por completo por inercia durante 1 segundo (delay(1000)).</li>
+<li>Sentido 2 (Reversa/Contragiro): El motor giró en la dirección opuesta durante 1 segundo (delay(1000)).</li>
+</ul>
+<h3 id="conclusion_4">Conclusion</h3>
+<p>La práctica fue exitosa al demostrar el control básico de dirección y temporización de un motor DC utilizando el ESP32 y un driver Puente H. Se logró controlar la dirección de giro y la duración de cada estado (avance, paro y reversa) mediante los comandos digitalWrite() y delay(). Esto confirmó la comprensión de la lógica del driver y la capacidad del ESP32 para manejar la actuación.</p>
+<p><img src="../recursos/imgs/Motores1.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Motores2.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Motores3.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Motores4.jpeg" alt="Diagrama del sistema" width="300"></p>
+<video controls width="400">
+ <source src="../recursos/archivos/practicamotores.mp4" type="video/mp4">
+</video>
+
+<p><a href="../recursos/archivos/practicamotores.mp4">Video de Encendidi de Motores con ESP32</a></p>
+<h2 id="practica-6-aceleracion-y-desaceleracion-de-motores-con-esp32"><strong>Practica 6 - Aceleracion y desaceleracion de motores con ESP32</strong></h2>
+<h3 id="introduccion_5">Introduccion</h3>
+<p>La Práctica de Control de Velocidad con ESP32 tuvo como enfoque principal la aplicación de la Modulación por Ancho de Pulso (PWM) para lograr un control fino y gradual del movimiento de un motor de corriente continua (DC). El objetivo fue ir más allá del control simple de encendido/apagado para implementar una variación dinámica de la velocidad.</p>
+<ul>
+<li>Objetivos:</li>
+</ul>
+<p>Los objetivos principales de esta práctica fueron:
+   - Configurar y utilizar el hardware de PWM del microcontrolador ESP32 para generar una señal de velocidad.
+   - Implementar un algoritmo que permita al motor acelerar progresivamente hasta su velocidad máxima.
+   - Implementar un algoritmo que, al alcanzar la velocidad máxima o un umbral predefinido, inicie una desaceleración o un cambio en la rampa de velocidad.</p>
+<h3 id="marco-teorico_5">Marco Teorico</h3>
+<ul>
+<li>Motores DC (Actuador):</li>
+</ul>
+<p>El Motor DC es el actuador cuya velocidad se controla. Su velocidad de rotación es directamente proporcional al voltaje promedio que recibe. La dirección de giro se mantiene fija en esta práctica mediante una polaridad constante.</p>
+<ul>
+<li>Driver de Motor (Puente H)</li>
+</ul>
+<p>El Driver de Motor (Puente H) es esencial para suministrar la alta corriente que el ESP32 no puede proveer. En esta práctica, el Puente H cumple dos funciones:</p>
+<ul>
+<li>Control de Dirección: Los pines in1 y in2 se fijan en un estado lógico (1 y 0) para mantener una dirección constante.</li>
+<li>
+<p>Control de Velocidad: El pin PWM del ESP32 se conecta al pin de Enable del driver para modular el voltaje promedio que llega al motor.</p>
+</li>
+<li>
+<p>Modulación por Ancho de Pulso (PWM):</p>
+</li>
+</ul>
+<p>El PWM es la técnica central para el control de velocidad. El ESP32 utiliza la API ledc para generar una señal digital cuyo ciclo de trabajo (el tiempo que la señal está en ALTO) varía.</p>
+<ul>
+<li>
+<p>ledcAttachChannel(pin, freq, bits, channel): Inicializa un canal PWM. En el código, la resolución de 8 bits define que la velocidad varía de $0$ (apagado) a $255$ (máximo).</p>
+</li>
+<li>
+<p>ledcWrite(): Es la función que establece el ciclo de trabajo, controlando directamente la velocidad del motor.</p>
+</li>
+</ul>
+<h3 id="procedimiento_5">Procedimiento</h3>
+<p><strong>Materiales y Equipo</strong></p>
+<ul>
+<li>Microcontrolador ESP32 </li>
+<li>Motor de Corriente Continua </li>
+<li>Módulo Puente H</li>
+<li>Protoboard</li>
+<li>Cables Jumper</li>
+<li>Fuente de Alimentación Externa (para el motor)</li>
+<li>Computadora con IDE de Arduino</li>
+<li>Cable USB (para el ESP32)</li>
+</ul>
+<p><strong>Procedimiento</strong></p>
+<ul>
+<li>Montaje y Conexión del Hardware</li>
+</ul>
+<p>1.- Conexión del Driver de Potencia: Conecta los pines de control lógico del Driver de Motor (Puente H) a los pines digitales del ESP32.
+ - Conectar el pin de entrada 1 del driver a pin 32 (in1).
+ - Conectar el pin de entrada 2 del driver a pin 33 (in2).</p>
+<p>2.- Conexión del Motor: Conectar las dos terminales del Motor DC a las terminales de salida del Driver de Motor.</p>
+<p>3.- Conexión PWM: El pin 25 (definido implícitamente por el canal 0 en ledcAttachChannel) o un pin equivalente (esto debe revisarse, ya que ledcWrite usa el número de canal o el pin) se conecta al pin de Enable/Velocidad del driver.</p>
+<p>4.- Alimentación: Conectar la fuente de alimentación externa al pin de voltaje del Driver de Motor.
+ - Asegúrarnos de que la tierra (GND) del ESP32 esté conectada a la tierra (GND) del Driver de Motor y de la fuente externa (tierra común).</p>
+<p>5.- Alimentación Lógica: Conectar el ESP32 a la computadora mediante el cable USB para la alimentación lógica y la carga del código.</p>
+<p>6.- Subimos el codigo a la ESP32</p>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="cp">#define in1 32</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="cp">#define in2 33</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="kt">int</span><span class="w"> </span><span class="n">var</span><span class="o">=</span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w"> </span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="kt">void</span><span class="w"> </span><span class="nf">setup</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w"> </span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="n">pinMode</span><span class="p">(</span><span class="n">in2</span><span class="p">,</span><span class="w"> </span><span class="n">OUTPUT</span><span class="p">);</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="w">  </span><span class="n">ledcAttachChannel</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w"> </span><span class="mi">8</span><span class="w"> </span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">begin</span><span class="p">(</span><span class="mi">115200</span><span class="p">);</span>
+</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a><span class="w"> </span>
+</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="w"> </span>
+</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="p">}</span>
+</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="w"> </span>
+</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="kt">void</span><span class="w"> </span><span class="nf">loop</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a><span class="w">  </span><span class="n">Serial</span><span class="p">.</span><span class="n">println</span><span class="p">(</span><span class="n">var</span><span class="p">);</span>
+</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="w">  </span><span class="n">ledcWrite</span><span class="p">(</span><span class="mi">25</span><span class="p">,</span><span class="w"> </span><span class="n">var</span><span class="p">);</span>
+</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in1</span><span class="p">,</span><span class="mi">1</span><span class="p">);</span>
+</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="w">  </span><span class="n">digitalWrite</span><span class="p">(</span><span class="n">in2</span><span class="p">,</span><span class="mi">0</span><span class="p">);</span>
+</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a><span class="w">  </span><span class="n">var</span><span class="o">=</span><span class="n">var</span><span class="o">+</span><span class="mi">20</span><span class="p">;</span>
+</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="w">  </span><span class="k">if</span><span class="p">(</span><span class="n">var</span><span class="o">&gt;</span><span class="mi">255</span><span class="p">){</span>
+</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="w">     </span><span class="n">var</span><span class="o">=</span><span class="n">var</span><span class="mi">-80</span><span class="p">;</span>
+</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="w">  </span><span class="p">}</span><span class="w">  </span>
+</span><span id="__span-4-25"><a id="__codelineno-4-25" name="__codelineno-4-25" href="#__codelineno-4-25"></a><span class="w">  </span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">);</span>
+</span><span id="__span-4-26"><a id="__codelineno-4-26" name="__codelineno-4-26" href="#__codelineno-4-26"></a><span class="w"> </span>
+</span><span id="__span-4-27"><a id="__codelineno-4-27" name="__codelineno-4-27" href="#__codelineno-4-27"></a><span class="p">}</span>
+</span></code></pre></div>
+<h3 id="resultados_5">Resultados</h3>
+<ul>
+<li>
+<p>Aceleración: El motor aumentó su velocidad en pasos de 20 unidades de PWM cada 2 segundos.</p>
+</li>
+<li>
+<p>Desaceleración/Salto: En lugar de una desaceleración gradual, se observó un salto repentino a una velocidad menor cuando el contador var superó 255, seguido de una nueva aceleración.</p>
+</li>
+<li>
+<p>Dirección: La dirección de giro se mantuvo fija durante todo el experimento.</p>
+</li>
+</ul>
+<h3 id="conclusion_5">Conclusion</h3>
+<p>La práctica fue exitosa en la implementación de PWM para el control de velocidad del motor DC con el ESP32. Se logró un control dinámico donde el motor aceleró continuamente. El principal aprendizaje fue el uso de la función ledcWrite() para modular la velocidad y la importancia de la resolución de 8 bits (0-255). Sin embargo, el mecanismo implementado para manejar el exceso de velocidad (la caída de 80 unidades) resultó en un salto brusco de velocidad, no en una desaceleración progresiva y suave.</p>
+<hr />
+<h2 id="practica-7-reproduccion-del-video-de-la-camara-con-codigo-de-python"><strong>Practica 7 - Reproduccion del video de la camara con codigo de Python</strong></h2>
+<h3 id="introduccion_6">Introduccion</h3>
+<p>Esta práctica se centró en el desarrollo de una aplicación simple de visión por computadora utilizando Python y la librería OpenCV (cv2). Se logró acceder y capturar el stream de video en tiempo real desde la cámara web de la computadora. La finalidad fue visualizar dicho flujo de video en una ventana emergente, estableciendo así una base fundamental para futuros proyectos de procesamiento de imágenes. Todo el proceso de codificación y ejecución se realizó dentro del entorno de Visual Studio.</p>
+<ul>
+<li>Objetivos:</li>
+</ul>
+<p>Los objetivos principales de esta práctica fueron:
+   - </p>
+<h3 id="marco-teorico_6">Marco Teorico</h3>
+<ol>
+<li>
+<p>Python:
+Es el lenguaje de programación utilizado. Se eligió por su simplicidad y su capacidad para manejar grandes librerías como OpenCV, siendo ideal para proyectos de Visión por Computadora.</p>
+</li>
+<li>
+<p>OpenCV (Open Source Computer Vision Library):
+Es la biblioteca esencial que proporcionó las herramientas para interactuar con la cámara.</p>
+</li>
+<li>
+<p><code>cv2.VideoCapture(0)</code>: Se usó para establecer la conexión con la cámara web (el índice 0).</p>
+</li>
+<li>
+<p><code>cv2.imshow()</code> y <code>cv2.waitKey()</code>: Funciones que se encargaron de mostrar el fotograma en una ventana y controlar la velocidad del stream y la salida del programa.</p>
+</li>
+<li>
+<p>Visual Studio:
+Fue el Entorno de Desarrollo Integrado (IDE) que facilitó la escritura, ejecución y gestión del código Python y sus librerías.</p>
+</li>
+</ol>
+<h3 id="procedimiento_6">Procedimiento</h3>
+<p><strong>Materiales y Equipo</strong></p>
+<ol>
+<li>Hardware:</li>
+<li>Computadora: PC o laptop.</li>
+<li>
+<p>Cámara Web: Integrada o externa (USB).</p>
+</li>
+<li>
+<p>Software:</p>
+</li>
+<li>IDE: Visual Studio o Visual Studio Code (con extensión de Python).</li>
+<li>Lenguaje: Python 3.x.</li>
+<li>Librería Principal: OpenCV (opencv-python), instalada mediante pip. </li>
+</ol>
+<p><strong>Procedimiento</strong></p>
+<ol>
+<li>
+<p>Primero, en caso de no tenerlo instalado, debiamos instalar Python 3.2 para empezar a programar en Visual Studio</p>
+</li>
+<li>
+<p>Luego en Visual Studio creamos una carpeta en Python 3.2 y empezamos a programar</p>
+</li>
+<li>
+<p>Se importaron las librerías cv2 y numpy. Se inicializó el objeto de captura de video (video = cv2.VideoCapture(0)) y se comenzó un bucle infinito para leer continuamente los fotogramas de la cámara.</p>
+</li>
+<li>
+<p>Para facilitar la detección de colores bajo diferentes condiciones de luz, cada fotograma capturado (frame) se convirtió del espacio de color BGR al espacio de color HSV (Tono, Saturación, Valor) mediante la función cv2.cvtColor(dibujo, cv2.COLOR_BGR2HSV).</p>
+</li>
+<li>
+<p>Definición del Rango de Color (Segmentación): Se definió un rango de color específico en el espacio HSV para aislar el objeto de interés:</p>
+</li>
+<li>
+<p>Límite Inferior (bajo): [150, 80, 40]</p>
+</li>
+<li>
+<p>Límite Superior (alto): [255, 255, 255]</p>
+</li>
+<li>
+<p>Creación de la Máscara: Se utilizó la función cv2.inRange(hsv, bajo, alto) para crear una máscara binaria. Esta máscara solo mantuvo en color blanco los píxeles cuyo valor HSV caía dentro del rango definido, y el resto lo estableció en negro.</p>
+</li>
+<li>
+<p>Aplicación del Filtro: Se aplicó una operación AND bit a bit (cv2.bitwise_and) entre el fotograma original y la máscara. El resultado (result) mostró únicamente el área segmentada por el color, manteniendo el fondo negro.</p>
+</li>
+<li>
+<p>Visualización y Cierre: Se crearon tres ventanas para monitorear el proceso:</p>
+</li>
+<li>
+<p>"ORIGINAL": El fotograma BGR capturado directamente.</p>
+</li>
+<li>
+<p>"MASK": La máscara binaria que muestra el área segmentada.</p>
+</li>
+<li>
+<p>"RESULTADO": El fotograma final filtrado por color.</p>
+</li>
+</ol>
+<p>9.- Finalmente, se implementó la condición de salida (if cv2.waitKey(1) &amp; 0xFF == ord('q'):) para cerrar el programa al presionar la tecla 'q'.</p>
+<ul>
+<li>Este es el codigo con todo incluido:</li>
+</ul>
+<div class="language-cpp highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">import</span><span class="w"> </span><span class="n">cv2</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">import</span><span class="w"> </span><span class="n">numpy</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="n">np</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="n">video</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cv2</span><span class="p">.</span><span class="n">VideoCapture</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a><span class="n">cx</span><span class="o">=</span><span class="mi">0</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="n">cy</span><span class="o">=</span><span class="mi">0</span>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a><span class="k">while</span><span class="w"> </span><span class="n">True</span><span class="o">:</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a><span class="w">    </span><span class="n">ret</span><span class="p">,</span><span class="w"> </span><span class="n">frame</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">video</span><span class="p">.</span><span class="n">read</span><span class="p">()</span>
+</span><span id="__span-5-10"><a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="k">not</span><span class="w"> </span><span class="n">ret</span><span class="o">:</span>
+</span><span id="__span-5-11"><a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a><span class="w">        </span><span class="k">break</span>
+</span><span id="__span-5-12"><a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a><span class="w">    </span><span class="n">dibujo</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">frame</span><span class="p">.</span><span class="n">copy</span><span class="p">()</span>
+</span><span id="__span-5-13"><a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="w">    </span><span class="n">hsv</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cv2</span><span class="p">.</span><span class="n">cvtColor</span><span class="p">(</span><span class="n">dibujo</span><span class="p">,</span><span class="w"> </span><span class="n">cv2</span><span class="p">.</span><span class="n">COLOR_BGR2HSV</span><span class="p">)</span>
+</span><span id="__span-5-14"><a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a><span class="w">    </span><span class="cp">#2 variables rango alto y bajo</span>
+</span><span id="__span-5-15"><a id="__codelineno-5-15" name="__codelineno-5-15" href="#__codelineno-5-15"></a>
+</span><span id="__span-5-16"><a id="__codelineno-5-16" name="__codelineno-5-16" href="#__codelineno-5-16"></a><span class="w">    </span><span class="n">bajo</span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">150</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">40</span><span class="p">],</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-5-17"><a id="__codelineno-5-17" name="__codelineno-5-17" href="#__codelineno-5-17"></a><span class="w">    </span><span class="n">alto</span><span class="o">=</span><span class="w"> </span><span class="n">np</span><span class="p">.</span><span class="n">array</span><span class="p">([</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">,</span><span class="mi">255</span><span class="p">],</span><span class="w"> </span><span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="p">.</span><span class="n">uint8</span><span class="p">)</span>
+</span><span id="__span-5-18"><a id="__codelineno-5-18" name="__codelineno-5-18" href="#__codelineno-5-18"></a>
+</span><span id="__span-5-19"><a id="__codelineno-5-19" name="__codelineno-5-19" href="#__codelineno-5-19"></a><span class="w">    </span><span class="n">mask</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">cv2</span><span class="p">.</span><span class="n">inRange</span><span class="p">(</span><span class="n">hsv</span><span class="p">,</span><span class="n">bajo</span><span class="p">,</span><span class="n">alto</span><span class="p">)</span>
+</span><span id="__span-5-20"><a id="__codelineno-5-20" name="__codelineno-5-20" href="#__codelineno-5-20"></a><span class="w">    </span><span class="n">result</span><span class="o">=</span><span class="w"> </span><span class="n">cv2</span><span class="p">.</span><span class="n">bitwise_and</span><span class="p">(</span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">frame</span><span class="p">,</span><span class="w"> </span><span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+</span><span id="__span-5-21"><a id="__codelineno-5-21" name="__codelineno-5-21" href="#__codelineno-5-21"></a>
+</span><span id="__span-5-22"><a id="__codelineno-5-22" name="__codelineno-5-22" href="#__codelineno-5-22"></a><span class="w">    </span><span class="cp">#dibujo = cv2.cvtColor(dibujo, cv2.COLOR_BGR2RGB)</span>
+</span><span id="__span-5-23"><a id="__codelineno-5-23" name="__codelineno-5-23" href="#__codelineno-5-23"></a><span class="w">    </span><span class="cp">#dibujo[0:240,0:320,1]=0</span>
+</span><span id="__span-5-24"><a id="__codelineno-5-24" name="__codelineno-5-24" href="#__codelineno-5-24"></a><span class="w">    </span><span class="cp">#dibujo[240:480,320:640,0]=0</span>
+</span><span id="__span-5-25"><a id="__codelineno-5-25" name="__codelineno-5-25" href="#__codelineno-5-25"></a><span class="w">    </span><span class="cp">#cv2.line(dibujo, (0,0),(640, 480), (0,0,255),thickness=3, lineType=cv2.LINE_AA)</span>
+</span><span id="__span-5-26"><a id="__codelineno-5-26" name="__codelineno-5-26" href="#__codelineno-5-26"></a><span class="w">    </span><span class="cp">#cv2.rectangle(dibujo, (0,0),(640, 480), (0,255,0),thickness=3, lineType=cv2.LINE_AA)</span>
+</span><span id="__span-5-27"><a id="__codelineno-5-27" name="__codelineno-5-27" href="#__codelineno-5-27"></a><span class="w">    </span><span class="cp">#cv2.circle(dibujo, (cx,cy),100, (0,255,0),thickness=3, lineType=cv2.LINE_AA)</span>
+</span><span id="__span-5-28"><a id="__codelineno-5-28" name="__codelineno-5-28" href="#__codelineno-5-28"></a><span class="w">    </span><span class="cp">#cv2.putText(dibujo, &quot;texto&quot;,(320,240),cv2.FONT_HERSHEY_SIMPLEX, 2, (255,0,0),thickness=2, lineType=cv2.LINE_AA)</span>
+</span><span id="__span-5-29"><a id="__codelineno-5-29" name="__codelineno-5-29" href="#__codelineno-5-29"></a><span class="w">    </span><span class="cp">#cx=cx+1</span>
+</span><span id="__span-5-30"><a id="__codelineno-5-30" name="__codelineno-5-30" href="#__codelineno-5-30"></a><span class="w">    </span><span class="cp">#cy=cy+1</span>
+</span><span id="__span-5-31"><a id="__codelineno-5-31" name="__codelineno-5-31" href="#__codelineno-5-31"></a><span class="w">    </span><span class="cp">#mostrar imagen</span>
+</span><span id="__span-5-32"><a id="__codelineno-5-32" name="__codelineno-5-32" href="#__codelineno-5-32"></a><span class="w">    </span><span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">&quot;ORIGINAL&quot;</span><span class="p">,</span><span class="n">frame</span><span class="p">)</span>
+</span><span id="__span-5-33"><a id="__codelineno-5-33" name="__codelineno-5-33" href="#__codelineno-5-33"></a><span class="w">    </span><span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">&quot;MASK&quot;</span><span class="p">,</span><span class="n">mask</span><span class="p">)</span>
+</span><span id="__span-5-34"><a id="__codelineno-5-34" name="__codelineno-5-34" href="#__codelineno-5-34"></a><span class="w">    </span><span class="n">cv2</span><span class="p">.</span><span class="n">imshow</span><span class="p">(</span><span class="s">&quot;RESULTADO&quot;</span><span class="p">,</span><span class="n">result</span><span class="p">)</span>
+</span><span id="__span-5-35"><a id="__codelineno-5-35" name="__codelineno-5-35" href="#__codelineno-5-35"></a><span class="w">    </span><span class="cp">#Salida del bucle</span>
+</span><span id="__span-5-36"><a id="__codelineno-5-36" name="__codelineno-5-36" href="#__codelineno-5-36"></a><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="n">cv2</span><span class="p">.</span><span class="n">waitKey</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xFF</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">ord</span><span class="p">(</span><span class="sc">&#39;q&#39;</span><span class="p">)</span><span class="o">:</span>
+</span><span id="__span-5-37"><a id="__codelineno-5-37" name="__codelineno-5-37" href="#__codelineno-5-37"></a><span class="w">        </span><span class="k">break</span>
+</span><span id="__span-5-38"><a id="__codelineno-5-38" name="__codelineno-5-38" href="#__codelineno-5-38"></a>
+</span><span id="__span-5-39"><a id="__codelineno-5-39" name="__codelineno-5-39" href="#__codelineno-5-39"></a><span class="n">video</span><span class="p">.</span><span class="n">release</span><span class="p">()</span><span class="w">  </span>
+</span></code></pre></div>
+<ol>
+<li>Por ultimo compilamos e iniciamos el codigo para comprobar que funciona</li>
+</ol>
+<h3 id="resultados_6">Resultados</h3>
+<ul>
+<li>
+<p>Visualización Exitosa: Se logró iniciar la conexión con la cámara y mostrar el stream de video en una ventana gráfica en tiempo real.</p>
+</li>
+<li>
+<p>Segmentación por Color (HSV): El código fue más allá de la simple visualización, implementando la detección y aislamiento de un color específico (rojo/magenta) mediante el uso de la conversión al espacio de color HSV y la función cv2.inRange().</p>
+</li>
+<li>
+<p>Monitoreo del Proceso: Se generaron tres ventanas ("ORIGINAL", "MASK" y "RESULTADO") que permitieron visualizar cada etapa del procesamiento: la imagen sin filtrar, la máscara binaria, y el resultado final de la segmentación.</p>
+</li>
+</ul>
+<h3 id="conclusion_6">Conclusion</h3>
+<p>La práctica confirmó la utilidad de OpenCV para la adquisición y el filtrado de video. Se validó el concepto de segmentación por color (HSV), que permitió aislar objetos basándose en su tonalidad de manera más robusta que el espacio de color BGR. Este ejercicio sentó la base funcional para futuras aplicaciones de visión por computadora, como el seguimiento automático de objetos.</p>
+<p><img src="../recursos/imgs/videopr1.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr2.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr3.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr4.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr5.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr6.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr7.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr8.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr9.jpg" alt="Diagrama del sistema" width="300"></p>
+<video controls width="300">
+ <source src="../recursos/archivos/video_pr1.mp4" type="video/mp4">
+</video>
+
+<video controls width="300">
+ <source src="../recursos/archivos/video_pr2.mp4" type="video/mp4">
+</video>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.tooltips"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
