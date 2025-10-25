@@ -603,3 +603,151 @@ void loop() {
 ### Conclusion
 
 La práctica fue exitosa en la implementación de PWM para el control de velocidad del motor DC con el ESP32. Se logró un control dinámico donde el motor aceleró continuamente. El principal aprendizaje fue el uso de la función ledcWrite() para modular la velocidad y la importancia de la resolución de 8 bits (0-255). Sin embargo, el mecanismo implementado para manejar el exceso de velocidad (la caída de 80 unidades) resultó en un salto brusco de velocidad, no en una desaceleración progresiva y suave.
+
+---
+
+## **Practica 7 - Reproduccion del video de la camara con codigo de Python**
+
+### Introduccion
+
+Esta práctica se centró en el desarrollo de una aplicación simple de visión por computadora utilizando Python y la librería OpenCV (cv2). Se logró acceder y capturar el stream de video en tiempo real desde la cámara web de la computadora. La finalidad fue visualizar dicho flujo de video en una ventana emergente, estableciendo así una base fundamental para futuros proyectos de procesamiento de imágenes. Todo el proceso de codificación y ejecución se realizó dentro del entorno de Visual Studio.
+
+
+- Objetivos:
+
+Los objetivos principales de esta práctica fueron:
+   - 
+
+### Marco Teorico
+
+1. Python:
+Es el lenguaje de programación utilizado. Se eligió por su simplicidad y su capacidad para manejar grandes librerías como OpenCV, siendo ideal para proyectos de Visión por Computadora.
+
+2. OpenCV (Open Source Computer Vision Library):
+Es la biblioteca esencial que proporcionó las herramientas para interactuar con la cámara.
+
+- `cv2.VideoCapture(0)`: Se usó para establecer la conexión con la cámara web (el índice 0).
+
+- `cv2.imshow()` y `cv2.waitKey()`: Funciones que se encargaron de mostrar el fotograma en una ventana y controlar la velocidad del stream y la salida del programa.
+
+3. Visual Studio:
+Fue el Entorno de Desarrollo Integrado (IDE) que facilitó la escritura, ejecución y gestión del código Python y sus librerías.
+
+
+### Procedimiento
+
+**Materiales y Equipo**
+
+1. Hardware:
+- Computadora: PC o laptop.
+- Cámara Web: Integrada o externa (USB).
+
+2. Software:
+- IDE: Visual Studio o Visual Studio Code (con extensión de Python).
+- Lenguaje: Python 3.x.
+- Librería Principal: OpenCV (opencv-python), instalada mediante pip. 
+
+
+
+**Procedimiento**
+
+1. Primero, en caso de no tenerlo instalado, debiamos instalar Python 3.2 para empezar a programar en Visual Studio
+   
+2. Luego en Visual Studio creamos una carpeta en Python 3.2 y empezamos a programar
+   
+3. Se importaron las librerías cv2 y numpy. Se inicializó el objeto de captura de video (video = cv2.VideoCapture(0)) y se comenzó un bucle infinito para leer continuamente los fotogramas de la cámara.
+
+4. Para facilitar la detección de colores bajo diferentes condiciones de luz, cada fotograma capturado (frame) se convirtió del espacio de color BGR al espacio de color HSV (Tono, Saturación, Valor) mediante la función cv2.cvtColor(dibujo, cv2.COLOR_BGR2HSV).
+
+5. Definición del Rango de Color (Segmentación): Se definió un rango de color específico en el espacio HSV para aislar el objeto de interés:
+
+- Límite Inferior (bajo): [150, 80, 40]
+- Límite Superior (alto): [255, 255, 255]
+
+
+6. Creación de la Máscara: Se utilizó la función cv2.inRange(hsv, bajo, alto) para crear una máscara binaria. Esta máscara solo mantuvo en color blanco los píxeles cuyo valor HSV caía dentro del rango definido, y el resto lo estableció en negro.
+
+7. Aplicación del Filtro: Se aplicó una operación AND bit a bit (cv2.bitwise_and) entre el fotograma original y la máscara. El resultado (result) mostró únicamente el área segmentada por el color, manteniendo el fondo negro.
+
+8. Visualización y Cierre: Se crearon tres ventanas para monitorear el proceso:
+
+- "ORIGINAL": El fotograma BGR capturado directamente.
+
+- "MASK": La máscara binaria que muestra el área segmentada.
+
+- "RESULTADO": El fotograma final filtrado por color.
+
+9.- Finalmente, se implementó la condición de salida (if cv2.waitKey(1) & 0xFF == ord('q'):) para cerrar el programa al presionar la tecla 'q'.
+
+- Este es el codigo con todo incluido:
+
+```cpp
+
+import cv2
+import numpy as np
+ 
+ 
+video = cv2.VideoCapture(0)
+cx=0
+cy=0
+while True:
+    ret, frame = video.read()
+    if not ret:
+        break
+    dibujo = frame.copy()
+    hsv = cv2.cvtColor(dibujo, cv2.COLOR_BGR2HSV)
+    #2 variables rango alto y bajo
+ 
+    bajo= np.array([150,80,40], dtype=np.uint8)
+    alto= np.array([255,255,255], dtype=np.uint8)
+ 
+    mask = cv2.inRange(hsv,bajo,alto)
+    result= cv2.bitwise_and(frame, frame, mask=mask)
+ 
+    #dibujo = cv2.cvtColor(dibujo, cv2.COLOR_BGR2RGB)
+    #dibujo[0:240,0:320,1]=0
+    #dibujo[240:480,320:640,0]=0
+    #cv2.line(dibujo, (0,0),(640, 480), (0,0,255),thickness=3, lineType=cv2.LINE_AA)
+    #cv2.rectangle(dibujo, (0,0),(640, 480), (0,255,0),thickness=3, lineType=cv2.LINE_AA)
+    #cv2.circle(dibujo, (cx,cy),100, (0,255,0),thickness=3, lineType=cv2.LINE_AA)
+    #cv2.putText(dibujo, "texto",(320,240),cv2.FONT_HERSHEY_SIMPLEX, 2, (255,0,0),thickness=2, lineType=cv2.LINE_AA)
+    #cx=cx+1
+    #cy=cy+1
+    #mostrar imagen
+    cv2.imshow("ORIGINAL",frame)
+    cv2.imshow("MASK",mask)
+    cv2.imshow("RESULTADO",result)
+    #Salida del bucle
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+ 
+video.release()  
+
+
+```
+
+10.   Por ultimo compilamos e iniciamos el codigo para comprobar que funciona
+
+
+### Resultados
+
+- Visualización Exitosa: Se logró iniciar la conexión con la cámara y mostrar el stream de video en una ventana gráfica en tiempo real.
+
+- Segmentación por Color (HSV): El código fue más allá de la simple visualización, implementando la detección y aislamiento de un color específico (rojo/magenta) mediante el uso de la conversión al espacio de color HSV y la función cv2.inRange().
+
+- Monitoreo del Proceso: Se generaron tres ventanas ("ORIGINAL", "MASK" y "RESULTADO") que permitieron visualizar cada etapa del procesamiento: la imagen sin filtrar, la máscara binaria, y el resultado final de la segmentación.
+
+
+### Conclusion
+
+La práctica confirmó la utilidad de OpenCV para la adquisición y el filtrado de video. Se validó el concepto de segmentación por color (HSV), que permitió aislar objetos basándose en su tonalidad de manera más robusta que el espacio de color BGR. Este ejercicio sentó la base funcional para futuras aplicaciones de visión por computadora, como el seguimiento automático de objetos.
+
+<img src="../recursos/imgs/videopr1.jpg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/videopr2.jpg" alt="Diagrama del sistema" width="300">
+
+
+
+
+
+
+
