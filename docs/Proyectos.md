@@ -76,10 +76,11 @@ El desempeño del coche fue excepcional en el torneo de "Fútbol de Coches", val
 
 El proyecto de "Partido de Coches" fue un éxito técnico y funcional. Se validó la versatilidad de la ESP32 como microcontrolador central para aplicaciones IoT de control en tiempo real, combinando la comunicación inalámbrica (Bluetooth) con el control de potencia de alto rendimiento (L298N).
 
-<img src="../recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
-<img src="../recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
-<img src="../recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
-
+<img src="../recursos/imgs/Carro1.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Carro2.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Carro3.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Carro4.jpeg" alt="Diagrama del sistema" width="300">
+<img src="../recursos/imgs/Carro5.jpeg" alt="Diagrama del sistema" width="300">
 
 
 
