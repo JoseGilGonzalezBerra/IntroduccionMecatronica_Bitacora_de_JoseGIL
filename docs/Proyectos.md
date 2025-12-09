@@ -817,11 +817,7 @@ Esta sección debe enfocarse en la validación de los tres subsistemas: visión,
 
 El proyecto de Plataforma de Balanceo de Bola demostró la aplicación efectiva de la ingeniería de control y la visión por computadora. Se logró integrar con éxito tres dominios: el procesamiento de alto nivel (Python/OpenCV), la comunicación inalámbrica (Bluetooth) y el control de actuadores de precisión (Servomotores/ESP32). Este sistema valida la capacidad de la arquitectura PC-Microcontrolador para resolver problemas de control dinámico que requieren un alto poder de cómputo para la detección de errores.
 
-<img src="../recursos/imgs/practica1led.jpg" alt="Diagrama del sistema" width="300">
-
-<video controls width="400">
- <source src="../recursos/archivos/practica1video.mp4" type="video/mp4">
-</video>
+<img src="../recursos/imgs/ped.jpg" alt="Diagrama del sistema" width="300">
 
 
 
