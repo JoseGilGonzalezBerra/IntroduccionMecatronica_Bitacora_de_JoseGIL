@@ -823,6 +823,10 @@ El proyecto de Plataforma de Balanceo de Bola demostró la aplicación efectiva 
 <img src="../recursos/imgs/Tabla3.jpeg" alt="Diagrama del sistema" width="300">
 <img src="../recursos/imgs/Tabla4.jpeg" alt="Diagrama del sistema" width="300">
 
+<video controls width="400">
+ <source src="../recursos/archivos/Tabla5.mp4" type="video/mp4">
+</video>
+
 
 
 
